@@ -28,13 +28,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_0_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_0_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_0_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_0_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -56,13 +56,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_1_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_1_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_1_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_1_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -84,37 +84,37 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_2_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_2_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_2_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_2_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_2_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_2_1.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_2_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_2_1.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_2_2.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_2_2.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_2_2.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_2_2.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -136,13 +136,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_3_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_3_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_3_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_3_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -164,25 +164,25 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_4_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_4_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_4_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_4_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_4_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_4_1.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_4_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_4_1.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -204,13 +204,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_5_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_5_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_5_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_5_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -232,13 +232,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_collision/MF1013_6_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_collision/MF1013_6_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/coro/ros2_ws/src/m1013/meshes/m1013_white/MF1013_6_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="/pkgs/curobo_doosan/src/m1013/meshes/m1013_white/MF1013_6_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
   </link>
@@ -401,7 +401,7 @@
           <parameter name="joint6.d" type="double">10.0</parameter>
         </ros-->
       <robot_sim_type>gazebo_ros2_control/DefaultRobotHWSim</robot_sim_type>
-      <parameters>/home/coro/ros2_ws/src/doosan-robot2/dsr_controller2/config/dsr_controller2.yaml</parameters>
+    
     </plugin>
   </gazebo>
   <link name="world"/>
