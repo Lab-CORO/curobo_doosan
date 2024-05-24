@@ -1,0 +1,6 @@
+Invoking command in '/home/coro/ros2_ws/src/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/coro/ros2_ws/src/Universal_Robots_ROS2_Driver/ur_description -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/src/install/ur_description
+Invoked command in '/home/coro/ros2_ws/src/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/coro/ros2_ws/src/Universal_Robots_ROS2_Driver/ur_description -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/src/install/ur_description
+Invoking command in '/home/coro/ros2_ws/src/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coro/ros2_ws/src/build/ur_description -- -j20 -l20
+Invoked command in '/home/coro/ros2_ws/src/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coro/ros2_ws/src/build/ur_description -- -j20 -l20
+Invoking command in '/home/coro/ros2_ws/src/build/ur_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coro/ros2_ws/src/build/ur_description
+Invoked command in '/home/coro/ros2_ws/src/build/ur_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coro/ros2_ws/src/build/ur_description

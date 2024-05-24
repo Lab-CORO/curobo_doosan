@@ -1,0 +1,2 @@
+[console_scripts]
+connection = dsr_bringup2.connection:main

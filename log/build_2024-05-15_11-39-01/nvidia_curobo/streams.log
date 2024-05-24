@@ -1,0 +1,598 @@
+[3.036s] Invoking command in '/home/coro/ros2_ws/src/curobo': PYTHONPATH=/home/coro/ros2_ws/src/build/nvidia_curobo/prefix_override:/home/coro/ros2_ws/src/install/nvidia_curobo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/nvidia_curobo build --build-base /home/coro/ros2_ws/src/build/nvidia_curobo/build install --record /home/coro/ros2_ws/src/build/nvidia_curobo/install.log --single-version-externally-managed
+[4.627s] /home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py:476: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[4.627s] !!
+[4.627s] 
+[4.627s]         ********************************************************************************
+[4.627s]         Usage of dash-separated 'long-description-content-type' will not be supported in future
+[4.627s]         versions. Please use the underscore name 'long_description_content_type' instead.
+[4.627s] 
+[4.627s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[4.627s]         or your builds will no longer be supported.
+[4.627s] 
+[4.627s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[4.627s]         ********************************************************************************
+[4.627s] 
+[4.627s] !!
+[4.627s]   opt = self.warn_dash_deprecation(opt, section)
+[4.687s] /home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py:476: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[4.687s] !!
+[4.687s] 
+[4.687s]         ********************************************************************************
+[4.687s]         Usage of dash-separated 'long-description-content-type' will not be supported in future
+[4.687s]         versions. Please use the underscore name 'long_description_content_type' instead.
+[4.687s] 
+[4.687s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[4.687s]         or your builds will no longer be supported.
+[4.687s] 
+[4.688s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[4.688s]         ********************************************************************************
+[4.688s] 
+[4.688s] !!
+[4.688s]   opt = self.warn_dash_deprecation(opt, section)
+[4.714s] running egg_info
+[4.714s] creating ../build/nvidia_curobo/nvidia_curobo.egg-info
+[4.721s] writing ../build/nvidia_curobo/nvidia_curobo.egg-info/PKG-INFO
+[4.723s] writing dependency_links to ../build/nvidia_curobo/nvidia_curobo.egg-info/dependency_links.txt
+[4.724s] writing requirements to ../build/nvidia_curobo/nvidia_curobo.egg-info/requires.txt
+[4.724s] writing top-level names to ../build/nvidia_curobo/nvidia_curobo.egg-info/top_level.txt
+[4.724s] writing manifest file '../build/nvidia_curobo/nvidia_curobo.egg-info/SOURCES.txt'
+[5.145s] reading manifest template 'MANIFEST.in'
+[5.158s] adding license file 'LICENSE'
+[5.158s] warning: no directories found matching 'src/curobo/curobolib/*.so'
+[5.161s] writing manifest file '../build/nvidia_curobo/nvidia_curobo.egg-info/SOURCES.txt'
+[5.161s] running build
+[5.161s] running build_py
+[5.161s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build
+[5.161s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310
+[5.161s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo
+[5.161s] copying src/curobo/util_file.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo
+[5.170s] copying src/curobo/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo
+[5.170s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom
+[5.170s] copying src/curobo/geom/transform.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom
+[5.170s] copying src/curobo/geom/sphere_fit.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom
+[5.170s] copying src/curobo/geom/cv.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom
+[5.170s] copying src/curobo/geom/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom
+[5.170s] copying src/curobo/geom/types.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom
+[5.170s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap
+[5.170s] copying src/curobo/wrap/wrap_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap
+[5.171s] copying src/curobo/wrap/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap
+[5.171s] copying src/curobo/wrap/wrap_mpc.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap
+[5.171s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout
+[5.171s] copying src/curobo/rollout/rollout_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout
+[5.171s] copying src/curobo/rollout/arm_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout
+[5.171s] copying src/curobo/rollout/arm_reacher.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout
+[5.171s] copying src/curobo/rollout/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout
+[5.172s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.172s] copying src/curobo/cuda_robot_model/kinematics_parser.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.172s] copying src/curobo/cuda_robot_model/usd_kinematics_parser.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.172s] copying src/curobo/cuda_robot_model/urdf_kinematics_parser.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.172s] copying src/curobo/cuda_robot_model/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.173s] copying src/curobo/cuda_robot_model/types.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.173s] copying src/curobo/cuda_robot_model/cuda_robot_model.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.173s] copying src/curobo/cuda_robot_model/cuda_robot_generator.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/cuda_robot_model
+[5.173s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.173s] copying src/curobo/util/sample_lib.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.173s] copying src/curobo/util/usd_helper.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.173s] copying src/curobo/util/helpers.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/tensor_util.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/torch_utils.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/metrics.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/error_metrics.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/trajectory.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/warp.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/warp_interpolation.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.174s] copying src/curobo/util/logger.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.175s] copying src/curobo/util/state_filter.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/util
+[5.175s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/graph
+[5.175s] copying src/curobo/graph/graph_nx.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/graph
+[5.175s] copying src/curobo/graph/prm.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/graph
+[5.175s] copying src/curobo/graph/graph_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/graph
+[5.175s] copying src/curobo/graph/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/graph
+[5.176s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/geom.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/util_file.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/kinematics.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/ls.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/opt.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/tensor_step.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] copying src/curobo/curobolib/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib
+[5.176s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/state.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/tensor.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/math.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/robot.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/camera.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.177s] copying src/curobo/types/enum.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/types
+[5.178s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt
+[5.178s] copying src/curobo/opt/opt_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt
+[5.178s] copying src/curobo/opt/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt
+[5.178s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.178s] copying src/curobo/geom/sdf/world.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.178s] copying src/curobo/geom/sdf/utils.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.178s] copying src/curobo/geom/sdf/warp_primitives.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.178s] copying src/curobo/geom/sdf/world_mesh.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.178s] copying src/curobo/geom/sdf/sdf_grid.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.179s] copying src/curobo/geom/sdf/world_blox.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.179s] copying src/curobo/geom/sdf/world_voxel.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.179s] copying src/curobo/geom/sdf/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/geom/sdf
+[5.179s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.179s] copying src/curobo/wrap/reacher/trajopt.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.179s] copying src/curobo/wrap/reacher/ik_solver.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.180s] copying src/curobo/wrap/reacher/evaluator.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.180s] copying src/curobo/wrap/reacher/mpc.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.180s] copying src/curobo/wrap/reacher/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.180s] copying src/curobo/wrap/reacher/types.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.180s] copying src/curobo/wrap/reacher/motion_gen.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/reacher
+[5.181s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/model
+[5.181s] copying src/curobo/wrap/model/robot_world.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/model
+[5.181s] copying src/curobo/wrap/model/robot_segmenter.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/model
+[5.181s] copying src/curobo/wrap/model/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/model
+[5.181s] copying src/curobo/wrap/model/curobo_robot_world.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/wrap/model
+[5.181s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.181s] copying src/curobo/rollout/cost/pose_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.181s] copying src/curobo/rollout/cost/bound_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/stop_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/projected_dist_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/primitive_collision_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/self_collision_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/dist_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/cost_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.182s] copying src/curobo/rollout/cost/manipulability_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.183s] copying src/curobo/rollout/cost/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.183s] copying src/curobo/rollout/cost/zero_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.183s] copying src/curobo/rollout/cost/straight_line_cost.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/cost
+[5.183s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/dynamics_model
+[5.183s] copying src/curobo/rollout/dynamics_model/integration_utils.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/dynamics_model
+[5.183s] copying src/curobo/rollout/dynamics_model/tensor_step.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/dynamics_model
+[5.183s] copying src/curobo/rollout/dynamics_model/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/dynamics_model
+[5.183s] copying src/curobo/rollout/dynamics_model/kinematic_model.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/dynamics_model
+[5.184s] copying src/curobo/rollout/dynamics_model/model_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/rollout/dynamics_model
+[5.184s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/newton
+[5.184s] copying src/curobo/opt/newton/lbfgs.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/newton
+[5.184s] copying src/curobo/opt/newton/newton_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/newton
+[5.184s] copying src/curobo/opt/newton/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/newton
+[5.184s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/particle
+[5.184s] copying src/curobo/opt/particle/parallel_mppi.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/particle
+[5.184s] copying src/curobo/opt/particle/__init__.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/particle
+[5.185s] copying src/curobo/opt/particle/particle_opt_utils.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/particle
+[5.185s] copying src/curobo/opt/particle/parallel_es.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/particle
+[5.185s] copying src/curobo/opt/particle/particle_opt_base.py -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/opt/particle
+[5.194s] copying src/curobo/py.typed -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo
+[5.194s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/check_cuda.h -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/cuda_precisions.h -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/geom_cuda.cpp -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/helper_math.h -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/kinematics_fused_cuda.cpp -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/kinematics_fused_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/lbfgs_step_cuda.cpp -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.194s] copying src/curobo/curobolib/cpp/lbfgs_step_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/line_search_cuda.cpp -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/line_search_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/pose_distance_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/self_collision_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/sphere_obb_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/tensor_step_cuda.cpp -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.195s] copying src/curobo/curobolib/cpp/tensor_step_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.196s] copying src/curobo/curobolib/cpp/update_best_kernel.cu -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/curobolib/cpp
+[5.196s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content
+[5.196s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets
+[5.196s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/scene
+[5.196s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/scene/nvblox
+[5.196s] copying src/curobo/content/assets/scene/nvblox/srl_ur10_bins.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/scene/nvblox
+[5.196s] copying src/curobo/content/assets/scene/nvblox/srl_ur10_bins.nvblx -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/scene/nvblox
+[5.269s] copying src/curobo/content/assets/scene/nvblox/srl_ur10_bins.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/scene/nvblox
+[5.272s] copying src/curobo/content/assets/scene/nvblox/srl_ur10_bins_color.png -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/scene/nvblox
+[5.275s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot
+[5.275s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.275s] copying src/curobo/content/assets/robot/franka_description/franka_panda.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.275s] copying src/curobo/content/assets/robot/franka_description/franka_panda_mobile.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.275s] copying src/curobo/content/assets/robot/franka_description/franka_panda_mobile_base.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.275s] copying src/curobo/content/assets/robot/franka_description/franka_panda_mobile_x.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.275s] copying src/curobo/content/assets/robot/franka_description/franka_panda_mobile_xy.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.275s] copying src/curobo/content/assets/robot/franka_description/franka_panda_mobile_xy_tz.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] copying src/curobo/content/assets/robot/franka_description/franka_panda_no_gripper.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] copying src/curobo/content/assets/robot/franka_description/franka_test.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] copying src/curobo/content/assets/robot/franka_description/moving_gripper.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] copying src/curobo/content/assets/robot/franka_description/panda.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] copying src/curobo/content/assets/robot/franka_description/panda_grasp_gripper.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] copying src/curobo/content/assets/robot/franka_description/panda_gripper.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description
+[5.276s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova
+[5.276s] copying src/curobo/content/assets/robot/kinova/README.md -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova
+[5.276s] copying src/curobo/content/assets/robot/kinova/kinova_gen3_7dof.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova
+[5.277s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/simple
+[5.277s] copying src/curobo/content/assets/robot/simple/simple_mimic_robot.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/simple
+[5.277s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description
+[5.277s] copying src/curobo/content/assets/robot/iiwa_allegro_description/allegro.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description
+[5.277s] copying src/curobo/content/assets/robot/iiwa_allegro_description/iiwa.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description
+[5.277s] copying src/curobo/content/assets/robot/iiwa_allegro_description/iiwa_allegro.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description
+[5.278s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco
+[5.278s] copying src/curobo/content/assets/robot/jaco/jaco_7n.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco
+[5.278s] copying src/curobo/content/assets/robot/jaco/jaco_7s.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco
+[5.278s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.278s] copying src/curobo/content/assets/robot/ur_description/dual_ur10e.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.278s] copying src/curobo/content/assets/robot/ur_description/quad_ur10e.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.279s] copying src/curobo/content/assets/robot/ur_description/tri_ur10e.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.279s] copying src/curobo/content/assets/robot/ur_description/ur10e.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.280s] copying src/curobo/content/assets/robot/ur_description/ur5e.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.280s] copying src/curobo/content/assets/robot/ur_description/ur5e_robotiq_2f_140.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description
+[5.280s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes
+[5.280s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.280s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.280s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/finger.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.280s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/finger.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.281s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/graspnet_panda_mesh.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.281s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/hand.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.282s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/hand.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.282s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/hand.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.283s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/hand_ee_link.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.283s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/hand_gripper.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.284s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/hand_gripper.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.284s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link0.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.285s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link0.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.285s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link0.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.289s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link0.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.289s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link1.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.291s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link1.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.291s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link1.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.292s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link1.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.292s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link2.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.293s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link2.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.293s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link2.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.294s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link2.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.294s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link3.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.295s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link3.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.295s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link3.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.296s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link3.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.296s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link4.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.298s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link4.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.298s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link4.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.299s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link4.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.299s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link5.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.300s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link5.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.300s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link5.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.302s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link5.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.302s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link6.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.303s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link6.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.303s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link6.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.305s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link6.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.305s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link7.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.306s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link7.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.306s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link7.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.307s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/link7.obj.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.307s] copying src/curobo/content/assets/robot/franka_description/meshes/visual/train_gripper.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/visual
+[5.307s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.307s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/finger.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.307s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/finger.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.307s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/hand.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.308s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/hand.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.308s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/hand_flipped.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.308s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/hand_gripper.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.308s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/hand_gripper.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.308s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/hand_gripper_flipped.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.308s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link0.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link0.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link1.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link1.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link2.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link2.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link3.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.309s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link3.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.310s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link4.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.310s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link4.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.310s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link5.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.310s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link5.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.310s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link6.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.310s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link6.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.311s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link7.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.311s] copying src/curobo/content/assets/robot/franka_description/meshes/collision/link7.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/franka_description/meshes/collision
+[5.311s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description
+[5.311s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers
+[5.311s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140
+[5.311s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/LICENSE -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140
+[5.311s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/README.md -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140
+[5.311s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85
+[5.311s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/LICENSE -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85
+[5.311s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/README.md -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85
+[5.311s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes
+[5.311s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.312s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual/robotiq_arg2f_140_inner_finger.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.312s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual/robotiq_arg2f_140_inner_knuckle.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.312s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual/robotiq_arg2f_140_outer_finger.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.312s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual/robotiq_arg2f_140_outer_knuckle.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.313s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual/robotiq_arg2f_base_link.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.314s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual/robotiq_arg2f_coupling.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/visual
+[5.314s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.314s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision/robotiq_arg2f_140_inner_finger.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.314s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision/robotiq_arg2f_140_inner_knuckle.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.314s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision/robotiq_arg2f_140_outer_finger.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.314s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision/robotiq_arg2f_140_outer_knuckle.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.315s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision/robotiq_arg2f_base_link.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.315s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision/robotiq_arg2f_coupling.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_140/meshes/collision
+[5.315s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes
+[5.315s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.315s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_arg2f_85_base_link.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.317s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_arg2f_85_inner_finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.317s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_arg2f_85_inner_knuckle.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.318s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_arg2f_85_outer_finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.318s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_arg2f_85_outer_knuckle.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.318s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_arg2f_85_pad.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.319s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual/robotiq_gripper_coupling.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/visual
+[5.319s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.319s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision/robotiq_arg2f_85_base_link.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.319s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision/robotiq_arg2f_85_inner_finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.319s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision/robotiq_arg2f_85_inner_knuckle.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.320s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision/robotiq_arg2f_85_outer_finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.320s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision/robotiq_arg2f_85_outer_knuckle.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.320s] copying src/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision/robotiq_arg2f_base_link.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/grippers/robotiq_2f_85/meshes/collision
+[5.320s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms
+[5.320s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3
+[5.320s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof
+[5.320s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.320s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/base_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.321s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/bracelet_no_vision_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.322s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/bracelet_with_vision_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.323s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/end_effector_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.323s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/forearm_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.324s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/half_arm_1_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.325s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/half_arm_2_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.325s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/shoulder_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.326s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/spherical_wrist_1_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.327s] copying src/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes/spherical_wrist_2_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/kinova/kortex_description/arms/gen3/7dof/meshes
+[5.327s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes
+[5.327s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.328s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/base_link.STL -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.328s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/base_link.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.328s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/primary_base.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.328s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/primary_base.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.329s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/primary_medial.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.329s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/primary_medial.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.329s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/primary_proximal.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.330s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/primary_proximal.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.330s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/thumb_base.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.330s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/thumb_base.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.330s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/thumb_medial.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.331s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/thumb_medial.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.331s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/thumb_proximal.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.331s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro/thumb_proximal.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/allegro
+[5.331s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/mounts
+[5.331s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/mounts/allegro_mount.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/mounts
+[5.332s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/mounts/allegro_mount.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/mounts
+[5.332s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac
+[5.332s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac/biotac_sensor.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac
+[5.333s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac/biotac_sensor.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac
+[5.334s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac/biotac_sensor_thumb.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac
+[5.334s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac/biotac_sensor_thumb.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/biotac
+[5.335s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7
+[5.335s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.335s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_0.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.338s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_1.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.339s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_2.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.342s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_3.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.343s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_4.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.346s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_5.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.347s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_6.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.350s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual/link_7.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/visual
+[5.352s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.352s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_0.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.353s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_1.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.354s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_2.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.355s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_3.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.355s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_4.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.356s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_5.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.357s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_6.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.358s] copying src/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision/link_7.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/iiwa_allegro_description/meshes/iiwa7/collision
+[5.360s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.360s] copying src/curobo/content/assets/robot/jaco/meshes/arm.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.361s] copying src/curobo/content/assets/robot/jaco/meshes/arm_half_1.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.361s] copying src/curobo/content/assets/robot/jaco/meshes/arm_half_2.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.362s] copying src/curobo/content/assets/robot/jaco/meshes/arm_mico.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.363s] copying src/curobo/content/assets/robot/jaco/meshes/base.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.364s] copying src/curobo/content/assets/robot/jaco/meshes/finger_distal.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.364s] copying src/curobo/content/assets/robot/jaco/meshes/finger_proximal.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.365s] copying src/curobo/content/assets/robot/jaco/meshes/forearm.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.366s] copying src/curobo/content/assets/robot/jaco/meshes/forearm_mico.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.366s] copying src/curobo/content/assets/robot/jaco/meshes/hand_2finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.370s] copying src/curobo/content/assets/robot/jaco/meshes/hand_3finger.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.372s] copying src/curobo/content/assets/robot/jaco/meshes/ring_big.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.372s] copying src/curobo/content/assets/robot/jaco/meshes/ring_small.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.372s] copying src/curobo/content/assets/robot/jaco/meshes/shoulder.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.373s] copying src/curobo/content/assets/robot/jaco/meshes/wrist.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.374s] copying src/curobo/content/assets/robot/jaco/meshes/wrist_spherical_1.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.374s] copying src/curobo/content/assets/robot/jaco/meshes/wrist_spherical_2.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/jaco/meshes
+[5.375s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes
+[5.375s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e
+[5.375s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.375s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/base.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.376s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/forearm.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.377s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/shoulder.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.379s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/upperarm.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.381s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/wrist1.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.383s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/wrist2.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.384s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/visual/wrist3.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/visual
+[5.384s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.384s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/base.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.385s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/forearm.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.385s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/shoulder.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.385s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/upperarm.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.386s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/wrist1.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.386s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/wrist2.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.386s] copying src/curobo/content/assets/robot/ur_description/meshes/ur5e/collision/wrist3.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur5e/collision
+[5.386s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e
+[5.386s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.386s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/base.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.387s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/forearm.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.388s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/shoulder.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.391s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/upperarm.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.393s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/wrist1.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.395s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/wrist2.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.396s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/visual/wrist3.dae -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/visual
+[5.396s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.396s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/base.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.396s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/forearm.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.397s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/shoulder.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.397s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/upperarm.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.397s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/wrist1.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.397s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/wrist2.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.398s] copying src/curobo/content/assets/robot/ur_description/meshes/ur10e/collision/wrist3.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/ur_description/meshes/ur10e/collision
+[5.398s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman
+[5.398s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description
+[5.398s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/urdf
+[5.398s] copying src/curobo/content/assets/robot/techman/tm_description/urdf/tm12-nominal.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/urdf
+[5.398s] copying src/curobo/content/assets/robot/techman/tm_description/urdf/tm12x-nominal.urdf -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/urdf
+[5.398s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes
+[5.398s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12
+[5.398s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.398s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-arm1.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.399s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-arm1.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.403s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-arm1.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.405s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-arm2.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.405s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-arm2.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.407s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-arm2.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.408s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-base.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.408s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-base.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.410s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tm12-base.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.411s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tmr_750w_01.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.411s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tmr_750w_01.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.414s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual/tmr_750w_01.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/visual
+[5.416s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision
+[5.416s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision/tm12-arm1_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision
+[5.416s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision/tm12-arm2_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision
+[5.416s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision/tm12-base_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision
+[5.417s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision/tmr_750w_01_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm12/collision
+[5.417s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900
+[5.417s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.417s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-900_arm1.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.417s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-900_arm1.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.422s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-900_arm1.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.424s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-900_arm2.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.424s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-900_arm2.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.427s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-900_arm2.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.429s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-base.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.429s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-base.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.430s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tm5-base.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.430s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_100w_01.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.430s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_100w_01.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.434s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_100w_01.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.435s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_100w_02.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.435s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_100w_02.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.439s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_100w_02.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.441s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_400w_01.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.441s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_400w_01.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.444s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_400w_01.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.446s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_ee.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.446s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_ee.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.450s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_ee.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.452s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_iox.mtl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.453s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_iox.obj -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.455s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual/tmr_iox.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/visual
+[5.456s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.456s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tm5-900_arm1_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.456s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tm5-900_arm2_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.456s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tm5-base_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.457s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tmr_100w_01_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.457s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tmr_100w_02_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.457s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tmr_400w_01_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.457s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tmr_ee_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.458s] copying src/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision/tmr_iox_c.stl -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/assets/robot/techman/tm_description/meshes/tm5-900/collision
+[5.458s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs
+[5.458s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.458s] copying src/curobo/content/configs/world/collision_base.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.458s] copying src/curobo/content/configs/world/collision_cage.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.458s] copying src/curobo/content/configs/world/collision_cubby.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_floor_plan.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_handover.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_mesh_scene.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_nvblox.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_nvblox_online.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_nvblox_ur10.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_pillar_wall.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_primitives_3d.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.459s] copying src/curobo/content/configs/world/collision_table.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.460s] copying src/curobo/content/configs/world/collision_test.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.460s] copying src/curobo/content/configs/world/collision_thin_walls.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.460s] copying src/curobo/content/configs/world/collision_wall.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/world
+[5.460s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.460s] copying src/curobo/content/configs/task/base_cfg.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.460s] copying src/curobo/content/configs/task/finetune_trajopt.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.460s] copying src/curobo/content/configs/task/finetune_trajopt_slow.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.460s] copying src/curobo/content/configs/task/gradient_ik.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.460s] copying src/curobo/content/configs/task/gradient_mpc.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.460s] copying src/curobo/content/configs/task/gradient_trajopt.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.461s] copying src/curobo/content/configs/task/graph.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.461s] copying src/curobo/content/configs/task/particle_ik.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.461s] copying src/curobo/content/configs/task/particle_mpc.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.461s] copying src/curobo/content/configs/task/particle_trajopt.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/task
+[5.461s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.461s] copying src/curobo/content/configs/robot/dual_ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.461s] copying src/curobo/content/configs/robot/franka.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.461s] copying src/curobo/content/configs/robot/franka_mobile.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.461s] copying src/curobo/content/configs/robot/iiwa.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/iiwa_allegro.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/jaco7.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/kinova_gen3.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/quad_ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/simple_mimic_robot.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/template.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/tm12.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.462s] copying src/curobo/content/configs/robot/tri_ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.463s] copying src/curobo/content/configs/robot/ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.463s] copying src/curobo/content/configs/robot/ur5e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.463s] copying src/curobo/content/configs/robot/ur5e_robotiq_2f_140.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot
+[5.463s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/isaac_sim_description
+[5.463s] copying src/curobo/content/configs/robot/isaac_sim_description/jaco_7s.yaml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/isaac_sim_description
+[5.463s] copying src/curobo/content/configs/robot/isaac_sim_description/tm12.yaml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/isaac_sim_description
+[5.463s] copying src/curobo/content/configs/robot/isaac_sim_description/ur5e.yaml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/isaac_sim_description
+[5.463s] creating /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.463s] copying src/curobo/content/configs/robot/spheres/dual_ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/franka.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/franka_collision_mesh.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/franka_mesh.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/franka_mesh_inside.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/franka_mesh_mb.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/franka_real_robot.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/iiwa_allegro.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.464s] copying src/curobo/content/configs/robot/spheres/kinova_gen3.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.465s] copying src/curobo/content/configs/robot/spheres/quad_ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.465s] copying src/curobo/content/configs/robot/spheres/single.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.465s] copying src/curobo/content/configs/robot/spheres/ur10e.yml -> /home/coro/ros2_ws/src/build/nvidia_curobo/build/lib.linux-x86_64-cpython-310/curobo/content/configs/robot/spheres
+[5.467s] running build_ext
+[5.471s] Traceback (most recent call last):
+[5.471s]   File "/home/coro/ros2_ws/src/curobo/setup.py", line 81, in <module>
+[5.471s]     setuptools.setup(
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 104, in setup
+[5.471s]     return distutils.core.setup(**attrs)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 184, in setup
+[5.471s]     return run_commands(dist)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 200, in run_commands
+[5.471s]     dist.run_commands()
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+[5.471s]     self.run_command(cmd)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py", line 967, in run_command
+[5.471s]     super().run_command(command)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+[5.471s]     cmd_obj.run()
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/command/build.py", line 132, in run
+[5.471s]     self.run_command(cmd_name)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 316, in run_command
+[5.471s]     self.distribution.run_command(command)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py", line 967, in run_command
+[5.471s]     super().run_command(command)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+[5.471s]     cmd_obj.run()
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 91, in run
+[5.471s]     _build_ext.run(self)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 359, in run
+[5.471s]     self.build_extensions()
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 522, in build_extensions
+[5.471s]     _check_cuda_version(compiler_name, compiler_version)
+[5.471s]   File "/home/coro/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 417, in _check_cuda_version
+[5.471s]     raise RuntimeError(CUDA_MISMATCH_MESSAGE.format(cuda_str_version, torch.version.cuda))
+[5.471s] RuntimeError: 
+[5.471s] The detected CUDA version (11.7) mismatches the version that was used to compile
+[5.472s] PyTorch (12.1). Please make sure to use the same CUDA versions.
+[5.472s] 
+[5.667s] Invoked command in '/home/coro/ros2_ws/src/curobo' returned '1': PYTHONPATH=/home/coro/ros2_ws/src/build/nvidia_curobo/prefix_override:/home/coro/ros2_ws/src/install/nvidia_curobo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/nvidia_curobo build --build-base /home/coro/ros2_ws/src/build/nvidia_curobo/build install --record /home/coro/ros2_ws/src/build/nvidia_curobo/install.log --single-version-externally-managed

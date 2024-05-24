@@ -1,0 +1,41 @@
+[0.004s] Invoking command in '/home/coro/ros2_ws/src/build/dsr_hardware2': AMENT_PREFIX_PATH=/home/coro/ros2_ws/src/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/coro/ros2_ws/src/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/src/install/dsr_msgs2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64 PYTHONPATH=/home/coro/ros2_ws/src/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_hardware2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/src/install/dsr_hardware2
+[0.041s] -- The CXX compiler identification is GNU 11.4.0
+[0.046s] -- Detecting CXX compiler ABI info
+[0.092s] -- Detecting CXX compiler ABI info - done
+[0.097s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.098s] -- Detecting CXX compile features
+[0.098s] -- Detecting CXX compile features - done
+[0.099s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.331s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.381s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.404s] -- Found hardware_interface: 2.40.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.423s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.425s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.430s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.439s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.817s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.818s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.840s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.871s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.873s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.886s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.891s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.896s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.903s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.908s] -- Looking for C++ include pthread.h
+[0.957s] -- Looking for C++ include pthread.h - found
+[0.958s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.008s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.008s] -- Found Threads: TRUE  
+[1.101s] -- Found dsr_msgs2: 1.1.0 (/home/coro/ros2_ws/src/install/dsr_msgs2/share/dsr_msgs2/cmake)
+[1.134s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[1.446s] -- Found controller_manager: 2.40.0 (/opt/ros/humble/share/controller_manager/cmake)
+[1.704s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[1.711s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.712s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.712s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.157s] -- Found ament_cmake_pytest: 1.3.8 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[2.197s] -- Configuring done
+[2.217s] -- Generating done
+[2.218s] -- Build files have been written to: /home/coro/ros2_ws/src/build/dsr_hardware2

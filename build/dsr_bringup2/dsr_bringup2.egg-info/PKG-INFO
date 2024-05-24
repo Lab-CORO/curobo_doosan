@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dsr_bringup2
+Version: 0.1.2
+Summary: dsr_bringup2
+Maintainer: Minsoo Song
+Maintainer-email: minsoo.song@doosan.com
+License: BSD
+Requires-Dist: setuptools
