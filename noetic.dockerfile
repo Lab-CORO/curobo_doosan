@@ -62,19 +62,18 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> /home/.bashrc
 
 RUN mkdir -p /home/catkin_ws/src \
     && cd /home/catkin_ws/src \
-    && git clone -b ros_control_compat https://github.com/BryanStuurman/doosan-robot.git doosan-robot-compat \
+    && git clone -b noetic-devel https://github.com/doosan-robotics/doosan-robot.git \
     && git clone https://github.com/ros-industrial/industrial_core.git -b melodic-devel \
-    && git clone https://github.com/wjwwood/serial.git
+    && git clone https://github.com/wjwwood/serial.git 
 
 RUN source /opt/ros/noetic/setup.bash && cd /home/catkin_ws && rosdep install --from-paths src --ignore-src --rosdistro noetic -r -y
 
 RUN rm -rf /home/catkin_ws/build /home/catkin_ws/devel
 
-RUN source /opt/ros/noetic/setup.bash && cd /home/catkin_ws && catkin_make
 
 RUN echo "source /home/catkin_ws/devel/setup.bash" >> /home/.bashrc
 
-EXPOSE 11311
+EXPOSE 12345
 
 COPY doosan_interface_moveit.launch /home/catkin_ws/src/doosan-robot-compat/dsr_ros_control/launch
 
@@ -96,9 +95,18 @@ COPY joint_velocity_publisher.py /home/catkin_ws/src/joint_velocity_publisher/sr
 RUN chmod +x /home/catkin_ws/src/joint_velocity_publisher/src/joint_velocity_publisher.py
 
 # Recompilez l'espace de travail catkin et assurez-vous que les permissions sont correctes
+RUN source /opt/ros/noetic/setup.bash
+
+RUN git clone -b noetic-devel https://github.com/doosan-robotics/doosan-robot.git && \
+    cd /home/catkin_ws/src/doosan-robot && \
+    git reset --hard c9f8ed6fa6f13bebfe20672da1e4a9df8613701d 
+
+
+RUN cd /home/catkin_ws && sudo apt update && sudo apt install iputils-ping && sudo apt install net-tools
+
+
 RUN source /opt/ros/noetic/setup.bash && \
     cd /home/catkin_ws && \
-    catkin_make && \
-    chmod +x /home/catkin_ws/src/joint_velocity_publisher/src/joint_velocity_publisher.py
+    catkin_make
 
 CMD ["bash"]
