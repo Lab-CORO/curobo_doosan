@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:105 (file):
+  file INSTALL cannot find
+  "/home/coro/ros2_ws/src/doosan-robot2/common2/bin": No such file or
+  directory.
+
+[0m

@@ -1,0 +1,727 @@
+[0.051s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'dsr_controller2', 'dsr_bringup2', 'dsr_description2', 'dsr_hardware2', 'dsr_gazebo2', 'dsr_msgs2']
+[0.051s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['dsr_controller2', 'dsr_bringup2', 'dsr_description2', 'dsr_hardware2', 'dsr_gazebo2', 'dsr_msgs2'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7416fb112590>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7416fb112050>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7416fb112050>>)
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.071s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/coro/ros2_ws'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.079s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extensions ['ignore', 'ignore_ament_install']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'ignore'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'ignore_ament_install'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extensions ['colcon_pkg']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'colcon_pkg'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extensions ['colcon_meta']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'colcon_meta'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extensions ['ros']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'ros'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extensions ['cmake', 'python']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'cmake'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'python'
+[0.080s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/curobo' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extensions ['python_setup_py']
+[0.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo) by extension 'python_setup_py'
+[2.581s] DEBUG:colcon.colcon_core.package_identification:Package 'src/curobo' with type 'python' and name 'nvidia_curobo'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extensions ['ignore', 'ignore_ament_install']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'ignore'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'ignore_ament_install'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extensions ['colcon_pkg']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'colcon_pkg'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extensions ['colcon_meta']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'colcon_meta'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extensions ['ros']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'ros'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extensions ['cmake', 'python']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'cmake'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'python'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extensions ['python_setup_py']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan) by extension 'python_setup_py'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extensions ['ignore', 'ignore_ament_install']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'ignore'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'ignore_ament_install'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extensions ['colcon_pkg']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'colcon_pkg'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extensions ['colcon_meta']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'colcon_meta'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extensions ['ros']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'ros'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extensions ['cmake', 'python']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'cmake'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'python'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extensions ['python_setup_py']
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src) by extension 'python_setup_py'
+[2.581s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extensions ['ignore', 'ignore_ament_install']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'ignore'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'ignore_ament_install'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extensions ['colcon_pkg']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'colcon_pkg'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extensions ['colcon_meta']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'colcon_meta'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extensions ['ros']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'ros'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extensions ['cmake', 'python']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'cmake'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'python'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extensions ['python_setup_py']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013) by extension 'python_setup_py'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extensions ['ignore', 'ignore_ament_install']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'ignore'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'ignore_ament_install'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extensions ['colcon_pkg']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'colcon_pkg'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extensions ['colcon_meta']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'colcon_meta'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extensions ['ros']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'ros'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extensions ['cmake', 'python']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'cmake'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'python'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extensions ['python_setup_py']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes) by extension 'python_setup_py'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extensions ['ignore', 'ignore_ament_install']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'ignore'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'ignore_ament_install'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extensions ['colcon_pkg']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'colcon_pkg'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extensions ['colcon_meta']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'colcon_meta'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extensions ['ros']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'ros'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extensions ['cmake', 'python']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'cmake'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'python'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extensions ['python_setup_py']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_blue) by extension 'python_setup_py'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extensions ['ignore', 'ignore_ament_install']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'ignore'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'ignore_ament_install'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extensions ['colcon_pkg']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'colcon_pkg'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extensions ['colcon_meta']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'colcon_meta'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extensions ['ros']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'ros'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extensions ['cmake', 'python']
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'cmake'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'python'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extensions ['python_setup_py']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_collision) by extension 'python_setup_py'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extensions ['ignore', 'ignore_ament_install']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'ignore'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'ignore_ament_install'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extensions ['colcon_pkg']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'colcon_pkg'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extensions ['colcon_meta']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'colcon_meta'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extensions ['ros']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'ros'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extensions ['cmake', 'python']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'cmake'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'python'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extensions ['python_setup_py']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/curobo_doosan/src/m1013/meshes/m1013_white) by extension 'python_setup_py'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extensions ['ignore', 'ignore_ament_install']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'ignore'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'ignore_ament_install'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extensions ['colcon_pkg']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'colcon_pkg'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extensions ['colcon_meta']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'colcon_meta'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extensions ['ros']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'ros'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extensions ['cmake', 'python']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'cmake'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'python'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extensions ['python_setup_py']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2) by extension 'python_setup_py'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extensions ['ignore', 'ignore_ament_install']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extension 'ignore'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extension 'ignore_ament_install'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extensions ['colcon_pkg']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extension 'colcon_pkg'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extensions ['colcon_meta']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extension 'colcon_meta'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extensions ['ros']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/common2) by extension 'ros'
+[2.584s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/common2' with type 'ros.ament_cmake' and name 'common2'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extensions ['ignore', 'ignore_ament_install']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extension 'ignore'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extension 'ignore_ament_install'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extensions ['colcon_pkg']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extension 'colcon_pkg'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extensions ['colcon_meta']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extension 'colcon_meta'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extensions ['ros']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_bringup2) by extension 'ros'
+[2.585s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/dsr_bringup2' with type 'ros.ament_python' and name 'dsr_bringup2'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extensions ['ignore', 'ignore_ament_install']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extension 'ignore'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extension 'ignore_ament_install'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extensions ['colcon_pkg']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extension 'colcon_pkg'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extensions ['colcon_meta']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extension 'colcon_meta'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extensions ['ros']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_controller2) by extension 'ros'
+[2.586s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/dsr_controller2' with type 'ros.ament_cmake' and name 'dsr_controller2'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extensions ['ignore', 'ignore_ament_install']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extension 'ignore'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extension 'ignore_ament_install'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extensions ['colcon_pkg']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extension 'colcon_pkg'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extensions ['colcon_meta']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extension 'colcon_meta'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extensions ['ros']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_description2) by extension 'ros'
+[2.586s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/dsr_description2' with type 'ros.ament_cmake' and name 'dsr_description2'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extensions ['ignore', 'ignore_ament_install']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extension 'ignore'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extension 'ignore_ament_install'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extensions ['colcon_pkg']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extension 'colcon_pkg'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extensions ['colcon_meta']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extension 'colcon_meta'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extensions ['ros']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_gazebo2) by extension 'ros'
+[2.587s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/dsr_gazebo2' with type 'ros.ament_cmake' and name 'dsr_gazebo2'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extensions ['ignore', 'ignore_ament_install']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extension 'ignore'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extension 'ignore_ament_install'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extensions ['colcon_pkg']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extension 'colcon_pkg'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extensions ['colcon_meta']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extension 'colcon_meta'
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extensions ['ros']
+[2.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_hardware2) by extension 'ros'
+[2.588s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/dsr_hardware2' with type 'ros.ament_cmake' and name 'dsr_hardware2'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extensions ['ignore', 'ignore_ament_install']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extension 'ignore'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extension 'ignore_ament_install'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extensions ['colcon_pkg']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extension 'colcon_pkg'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extensions ['colcon_meta']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extension 'colcon_meta'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extensions ['ros']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/doosan-robot2/dsr_msgs2) by extension 'ros'
+[2.588s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doosan-robot2/dsr_msgs2' with type 'ros.ament_cmake' and name 'dsr_msgs2'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[2.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extensions ['ignore', 'ignore_ament_install']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'ignore'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'ignore_ament_install'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extensions ['colcon_pkg']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'colcon_pkg'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extensions ['colcon_meta']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'colcon_meta'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extensions ['ros']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'ros'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extensions ['cmake', 'python']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'cmake'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'python'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extensions ['python_setup_py']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013) by extension 'python_setup_py'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extensions ['ignore', 'ignore_ament_install']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'ignore'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'ignore_ament_install'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extensions ['colcon_pkg']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'colcon_pkg'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extensions ['colcon_meta']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'colcon_meta'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extensions ['ros']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'ros'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extensions ['cmake', 'python']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'cmake'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'python'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extensions ['python_setup_py']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes) by extension 'python_setup_py'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extensions ['ignore', 'ignore_ament_install']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'ignore'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'ignore_ament_install'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extensions ['colcon_pkg']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'colcon_pkg'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extensions ['colcon_meta']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'colcon_meta'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extensions ['ros']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'ros'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extensions ['cmake', 'python']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'cmake'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'python'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extensions ['python_setup_py']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_blue) by extension 'python_setup_py'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extensions ['ignore', 'ignore_ament_install']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'ignore'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'ignore_ament_install'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extensions ['colcon_pkg']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'colcon_pkg'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extensions ['colcon_meta']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'colcon_meta'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extensions ['ros']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'ros'
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extensions ['cmake', 'python']
+[2.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'cmake'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'python'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extensions ['python_setup_py']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_collision) by extension 'python_setup_py'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extensions ['ignore', 'ignore_ament_install']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'ignore'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'ignore_ament_install'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extensions ['colcon_pkg']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'colcon_pkg'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extensions ['colcon_meta']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'colcon_meta'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extensions ['ros']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'ros'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extensions ['cmake', 'python']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'cmake'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'python'
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extensions ['python_setup_py']
+[2.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/m1013/meshes/m1013_white) by extension 'python_setup_py'
+[2.590s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.590s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.590s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.590s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.590s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.600s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'common2' in 'src/doosan-robot2/common2'
+[2.600s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nvidia_curobo' in 'src/curobo'
+[2.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_calibration' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_robot_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_moveit_config' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/ur_dashboard_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_controller2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_msgs2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_launcher2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_hardware2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_gazebo2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_description2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/dsr_bringup2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/coro/ros2_ws/install/common2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_calibration' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_robot_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_moveit_config' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/ur_dashboard_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/dsr_controller2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/dsr_msgs2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/dsr_launcher2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/dsr_hardware2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/dsr_gazebo2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/dsr_description2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.601s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/coro/ros2_ws/install/common2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.602s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/coro/ros2_ws/install
+[2.602s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 368 installed packages in /opt/ros/humble
+[2.603s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'cmake_args' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'cmake_target' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'cmake_clean_first' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'cmake_force_configure' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'ament_cmake_args' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_bringup2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.625s] DEBUG:colcon.colcon_core.verb:Building package 'dsr_bringup2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/coro/ros2_ws/build/dsr_bringup2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/coro/ros2_ws/install/dsr_bringup2', 'merge_install': False, 'path': '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2', 'symlink_install': False, 'test_result_base': None}
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'cmake_args' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'cmake_target' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'cmake_clean_first' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'cmake_force_configure' from command line to 'False'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'ament_cmake_args' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.625s] Level 5:colcon.colcon_core.verb:set package 'dsr_description2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.625s] DEBUG:colcon.colcon_core.verb:Building package 'dsr_description2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/coro/ros2_ws/build/dsr_description2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/coro/ros2_ws/install/dsr_description2', 'merge_install': False, 'path': '/home/coro/ros2_ws/src/doosan-robot2/dsr_description2', 'symlink_install': False, 'test_result_base': None}
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'cmake_target' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'cmake_clean_first' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'cmake_force_configure' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'ament_cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_msgs2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.626s] DEBUG:colcon.colcon_core.verb:Building package 'dsr_msgs2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/coro/ros2_ws/build/dsr_msgs2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/coro/ros2_ws/install/dsr_msgs2', 'merge_install': False, 'path': '/home/coro/ros2_ws/src/doosan-robot2/dsr_msgs2', 'symlink_install': False, 'test_result_base': None}
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'cmake_target' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'cmake_clean_first' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'cmake_force_configure' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'ament_cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_gazebo2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.626s] DEBUG:colcon.colcon_core.verb:Building package 'dsr_gazebo2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/coro/ros2_ws/build/dsr_gazebo2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/coro/ros2_ws/install/dsr_gazebo2', 'merge_install': False, 'path': '/home/coro/ros2_ws/src/doosan-robot2/dsr_gazebo2', 'symlink_install': False, 'test_result_base': None}
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'cmake_target' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'cmake_clean_first' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'cmake_force_configure' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'ament_cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_hardware2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.626s] DEBUG:colcon.colcon_core.verb:Building package 'dsr_hardware2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/coro/ros2_ws/build/dsr_hardware2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/coro/ros2_ws/install/dsr_hardware2', 'merge_install': False, 'path': '/home/coro/ros2_ws/src/doosan-robot2/dsr_hardware2', 'symlink_install': False, 'test_result_base': None}
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'cmake_args' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'cmake_target' from command line to 'None'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'cmake_clean_first' from command line to 'False'
+[2.626s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'cmake_force_configure' from command line to 'False'
+[2.627s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'ament_cmake_args' from command line to 'None'
+[2.627s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.627s] Level 5:colcon.colcon_core.verb:set package 'dsr_controller2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.627s] DEBUG:colcon.colcon_core.verb:Building package 'dsr_controller2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/coro/ros2_ws/build/dsr_controller2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/coro/ros2_ws/install/dsr_controller2', 'merge_install': False, 'path': '/home/coro/ros2_ws/src/doosan-robot2/dsr_controller2', 'symlink_install': False, 'test_result_base': None}
+[2.627s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.627s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.627s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_msgs2' with build type 'ament_cmake'
+[2.627s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_msgs2'
+[2.629s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.639s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_description2' with build type 'ament_cmake'
+[2.639s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_description2'
+[2.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.641s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2' with build type 'ament_python'
+[2.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_bringup2', 'ament_prefix_path')
+[2.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/hook/ament_prefix_path.ps1'
+[2.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/hook/ament_prefix_path.dsv'
+[2.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/hook/ament_prefix_path.sh'
+[2.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_msgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_msgs2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_msgs2
+[2.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_description2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_description2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_description2
+[2.762s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2'
+[2.763s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.763s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2': PYTHONPATH=/home/coro/ros2_ws/build/dsr_bringup2/prefix_override:/home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/dsr_bringup2 build --build-base /home/coro/ros2_ws/build/dsr_bringup2/build install --record /home/coro/ros2_ws/build/dsr_bringup2/install.log --single-version-externally-managed install_data
+[3.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_description2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_description2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_description2
+[3.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_description2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_description2 -- -j20 -l20
+[3.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_description2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_description2 -- -j20 -l20
+[3.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_description2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_description2
+[3.355s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_description2)
+[3.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_description2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_description2
+[3.359s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2' for CMake module files
+[3.360s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2' for CMake config files
+[3.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_description2', 'cmake_prefix_path')
+[3.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/hook/cmake_prefix_path.ps1'
+[3.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/hook/cmake_prefix_path.dsv'
+[3.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/hook/cmake_prefix_path.sh'
+[3.361s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/bin'
+[3.362s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/lib/pkgconfig/dsr_description2.pc'
+[3.362s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/lib/python3.10/site-packages'
+[3.362s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/bin'
+[3.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.ps1'
+[3.363s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.dsv'
+[3.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.sh'
+[3.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.bash'
+[3.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.zsh'
+[3.364s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_description2/share/colcon-core/packages/dsr_description2)
+[3.388s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_description2)
+[3.388s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2' for CMake module files
+[3.389s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2' for CMake config files
+[3.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_description2', 'cmake_prefix_path')
+[3.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/hook/cmake_prefix_path.ps1'
+[3.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/hook/cmake_prefix_path.dsv'
+[3.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/hook/cmake_prefix_path.sh'
+[3.390s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/bin'
+[3.390s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/lib/pkgconfig/dsr_description2.pc'
+[3.390s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/lib/python3.10/site-packages'
+[3.390s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_description2/bin'
+[3.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.ps1'
+[3.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.dsv'
+[3.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.sh'
+[3.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.bash'
+[3.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_description2/share/dsr_description2/package.zsh'
+[3.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_description2/share/colcon-core/packages/dsr_description2)
+[3.391s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_gazebo2' with build type 'ament_cmake'
+[3.392s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_gazebo2'
+[3.392s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.392s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_gazebo2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_gazebo2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_gazebo2
+[3.921s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2' for CMake module files
+[3.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2' returned '0': PYTHONPATH=/home/coro/ros2_ws/build/dsr_bringup2/prefix_override:/home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/dsr_bringup2 build --build-base /home/coro/ros2_ws/build/dsr_bringup2/build install --record /home/coro/ros2_ws/build/dsr_bringup2/install.log --single-version-externally-managed install_data
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2' for CMake config files
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2/lib'
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2/bin'
+[3.922s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2/lib/pkgconfig/dsr_bringup2.pc'
+[3.923s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages'
+[3.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_bringup2', 'pythonpath')
+[3.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/hook/pythonpath.ps1'
+[3.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/hook/pythonpath.dsv'
+[3.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/hook/pythonpath.sh'
+[3.924s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_bringup2/bin'
+[3.924s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_bringup2)
+[3.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/package.ps1'
+[3.924s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/package.dsv'
+[3.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/package.sh'
+[3.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/package.bash'
+[3.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/package.zsh'
+[3.926s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_bringup2/share/colcon-core/packages/dsr_bringup2)
+[4.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_gazebo2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_gazebo2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_gazebo2
+[4.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_gazebo2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_gazebo2 -- -j20 -l20
+[4.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_gazebo2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_gazebo2 -- -j20 -l20
+[4.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_gazebo2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_gazebo2
+[4.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_gazebo2)
+[4.442s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2' for CMake module files
+[4.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_gazebo2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_gazebo2
+[4.443s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2' for CMake config files
+[4.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_gazebo2', 'cmake_prefix_path')
+[4.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/hook/cmake_prefix_path.ps1'
+[4.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/hook/cmake_prefix_path.dsv'
+[4.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/hook/cmake_prefix_path.sh'
+[4.443s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/bin'
+[4.444s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/lib/pkgconfig/dsr_gazebo2.pc'
+[4.444s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/lib/python3.10/site-packages'
+[4.444s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/bin'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.ps1'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.dsv'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.sh'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.bash'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.zsh'
+[4.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_gazebo2/share/colcon-core/packages/dsr_gazebo2)
+[4.469s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_gazebo2)
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2' for CMake module files
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2' for CMake config files
+[4.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_gazebo2', 'cmake_prefix_path')
+[4.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/hook/cmake_prefix_path.ps1'
+[4.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/hook/cmake_prefix_path.dsv'
+[4.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/hook/cmake_prefix_path.sh'
+[4.471s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/bin'
+[4.471s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/lib/pkgconfig/dsr_gazebo2.pc'
+[4.471s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/lib/python3.10/site-packages'
+[4.471s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_gazebo2/bin'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.ps1'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.dsv'
+[4.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.sh'
+[4.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.bash'
+[4.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_gazebo2/share/dsr_gazebo2/package.zsh'
+[4.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_gazebo2/share/colcon-core/packages/dsr_gazebo2)
+[4.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_msgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_msgs2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_msgs2
+[4.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_msgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_msgs2 -- -j20 -l20
+[41.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_msgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_msgs2 -- -j20 -l20
+[42.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_msgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_msgs2
+[42.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_msgs2)
+[42.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_msgs2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_msgs2
+[42.681s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2' for CMake module files
+[42.682s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2' for CMake config files
+[42.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_msgs2', 'cmake_prefix_path')
+[42.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/cmake_prefix_path.ps1'
+[42.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/cmake_prefix_path.dsv'
+[42.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/cmake_prefix_path.sh'
+[42.683s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/lib'
+[42.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_msgs2', 'ld_library_path_lib')
+[42.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/ld_library_path_lib.ps1'
+[42.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/ld_library_path_lib.dsv'
+[42.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/ld_library_path_lib.sh'
+[42.684s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/bin'
+[42.684s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/lib/pkgconfig/dsr_msgs2.pc'
+[42.684s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/lib/python3.10/site-packages'
+[42.684s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/bin'
+[42.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.ps1'
+[42.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.dsv'
+[42.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.sh'
+[42.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.bash'
+[42.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.zsh'
+[42.685s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_msgs2/share/colcon-core/packages/dsr_msgs2)
+[43.857s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_msgs2)
+[43.857s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2' for CMake module files
+[43.858s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2' for CMake config files
+[43.859s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_msgs2', 'cmake_prefix_path')
+[43.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/cmake_prefix_path.ps1'
+[43.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/cmake_prefix_path.dsv'
+[43.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/cmake_prefix_path.sh'
+[43.860s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/lib'
+[43.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_msgs2', 'ld_library_path_lib')
+[43.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/ld_library_path_lib.ps1'
+[43.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/ld_library_path_lib.dsv'
+[43.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/hook/ld_library_path_lib.sh'
+[43.860s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/bin'
+[43.860s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/lib/pkgconfig/dsr_msgs2.pc'
+[43.860s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/lib/python3.10/site-packages'
+[43.861s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_msgs2/bin'
+[43.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.ps1'
+[43.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.dsv'
+[43.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.sh'
+[43.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.bash'
+[43.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_msgs2/share/dsr_msgs2/package.zsh'
+[43.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_msgs2/share/colcon-core/packages/dsr_msgs2)
+[43.862s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_hardware2' with build type 'ament_cmake'
+[43.862s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_hardware2'
+[43.862s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.862s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_hardware2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/home/coro/ros2_ws/install/dsr_hardware2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_hardware2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_hardware2
+[46.099s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_hardware2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/home/coro/ros2_ws/install/dsr_hardware2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_hardware2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_hardware2
+[46.099s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_hardware2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/home/coro/ros2_ws/install/dsr_hardware2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_hardware2 -- -j20 -l20
+[52.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_hardware2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/home/coro/ros2_ws/install/dsr_hardware2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_hardware2 -- -j20 -l20
+[52.716s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_hardware2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/home/coro/ros2_ws/install/dsr_hardware2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_hardware2
+[52.735s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_hardware2)
+[52.735s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2' for CMake module files
+[52.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_hardware2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/home/coro/ros2_ws/install/dsr_hardware2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_hardware2
+[52.735s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2' for CMake config files
+[52.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_hardware2', 'cmake_prefix_path')
+[52.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/cmake_prefix_path.ps1'
+[52.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/cmake_prefix_path.dsv'
+[52.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/cmake_prefix_path.sh'
+[52.736s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/lib'
+[52.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_hardware2', 'ld_library_path_lib')
+[52.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/ld_library_path_lib.ps1'
+[52.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/ld_library_path_lib.dsv'
+[52.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/ld_library_path_lib.sh'
+[52.737s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/bin'
+[52.737s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/lib/pkgconfig/dsr_hardware2.pc'
+[52.737s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/lib/python3.10/site-packages'
+[52.737s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/bin'
+[52.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.ps1'
+[52.737s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.dsv'
+[52.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.sh'
+[52.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.bash'
+[52.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.zsh'
+[52.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_hardware2/share/colcon-core/packages/dsr_hardware2)
+[52.764s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_hardware2)
+[52.764s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2' for CMake module files
+[52.764s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2' for CMake config files
+[52.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_hardware2', 'cmake_prefix_path')
+[52.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/cmake_prefix_path.ps1'
+[52.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/cmake_prefix_path.dsv'
+[52.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/cmake_prefix_path.sh'
+[52.765s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/lib'
+[52.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_hardware2', 'ld_library_path_lib')
+[52.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/ld_library_path_lib.ps1'
+[52.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/ld_library_path_lib.dsv'
+[52.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/hook/ld_library_path_lib.sh'
+[52.766s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/bin'
+[52.766s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/lib/pkgconfig/dsr_hardware2.pc'
+[52.766s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/lib/python3.10/site-packages'
+[52.766s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_hardware2/bin'
+[52.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.ps1'
+[52.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.dsv'
+[52.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.sh'
+[52.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.bash'
+[52.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_hardware2/share/dsr_hardware2/package.zsh'
+[52.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_hardware2/share/colcon-core/packages/dsr_hardware2)
+[52.767s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_controller2' with build type 'ament_cmake'
+[52.767s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/coro/ros2_ws/src/doosan-robot2/dsr_controller2'
+[52.768s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[52.768s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[52.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_controller2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_hardware2/lib:/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_controller2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_controller2
+[55.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_controller2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_hardware2/lib:/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_controller2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/dsr_controller2
+[55.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_controller2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_hardware2/lib:/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_controller2 -- -j20 -l20
+[90.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_controller2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_hardware2/lib:/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_controller2 -- -j20 -l20
+[90.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/coro/ros2_ws/build/dsr_controller2': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_hardware2/lib:/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_controller2
+[91.021s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_controller2)
+[91.022s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2' for CMake module files
+[91.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/coro/ros2_ws/build/dsr_controller2' returned '0': CMAKE_PREFIX_PATH=/home/coro/ros2_ws/install/dsr_hardware2:/home/coro/ros2_ws/install/dsr_msgs2:/home/coro/ros2_ws/install/ur:/home/coro/ros2_ws/install/ur_calibration:/home/coro/ros2_ws/install/ur_robot_driver:/home/coro/ros2_ws/install/ur_moveit_config:/home/coro/ros2_ws/install/ur_bringup:/home/coro/ros2_ws/install/ur_description:/home/coro/ros2_ws/install/ur_controllers:/home/coro/ros2_ws/install/ur_dashboard_msgs:/home/coro/ros2_ws/install/dsr_controller2:/home/coro/ros2_ws/install/dsr_launcher2:/home/coro/ros2_ws/install/dsr_gazebo2:/home/coro/ros2_ws/install/dsr_description2:/home/coro/ros2_ws/install/common2:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble LD_LIBRARY_PATH=/home/coro/ros2_ws/install/dsr_hardware2/lib:/home/coro/ros2_ws/install/dsr_msgs2/lib:/home/coro/ros2_ws/install/ur_robot_driver/lib:/home/coro/ros2_ws/install/ur_controllers/lib:/home/coro/ros2_ws/install/ur_dashboard_msgs/lib:/home/coro/ros2_ws/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64:/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/dsr_controller2
+[91.022s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2' for CMake config files
+[91.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_controller2', 'cmake_prefix_path')
+[91.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/cmake_prefix_path.ps1'
+[91.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/cmake_prefix_path.dsv'
+[91.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/cmake_prefix_path.sh'
+[91.023s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/lib'
+[91.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_controller2', 'ld_library_path_lib')
+[91.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/ld_library_path_lib.ps1'
+[91.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/ld_library_path_lib.dsv'
+[91.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/ld_library_path_lib.sh'
+[91.023s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/bin'
+[91.023s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/lib/pkgconfig/dsr_controller2.pc'
+[91.024s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/lib/python3.10/site-packages'
+[91.024s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/bin'
+[91.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.ps1'
+[91.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.dsv'
+[91.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.sh'
+[91.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.bash'
+[91.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.zsh'
+[91.025s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_controller2/share/colcon-core/packages/dsr_controller2)
+[91.051s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dsr_controller2)
+[91.051s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2' for CMake module files
+[91.051s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2' for CMake config files
+[91.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_controller2', 'cmake_prefix_path')
+[91.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/cmake_prefix_path.ps1'
+[91.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/cmake_prefix_path.dsv'
+[91.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/cmake_prefix_path.sh'
+[91.052s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/lib'
+[91.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('dsr_controller2', 'ld_library_path_lib')
+[91.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/ld_library_path_lib.ps1'
+[91.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/ld_library_path_lib.dsv'
+[91.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/hook/ld_library_path_lib.sh'
+[91.053s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/bin'
+[91.053s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/lib/pkgconfig/dsr_controller2.pc'
+[91.053s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/lib/python3.10/site-packages'
+[91.053s] Level 1:colcon.colcon_core.environment:checking '/home/coro/ros2_ws/install/dsr_controller2/bin'
+[91.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.ps1'
+[91.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.dsv'
+[91.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.sh'
+[91.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.bash'
+[91.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/coro/ros2_ws/install/dsr_controller2/share/dsr_controller2/package.zsh'
+[91.054s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/coro/ros2_ws/install/dsr_controller2/share/colcon-core/packages/dsr_controller2)
+[91.054s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[91.054s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[91.054s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[91.054s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[91.063s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[91.063s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[91.063s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[91.072s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[91.072s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/coro/ros2_ws/install/local_setup.ps1'
+[91.073s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/coro/ros2_ws/install/_local_setup_util_ps1.py'
+[91.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/coro/ros2_ws/install/setup.ps1'
+[91.074s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/coro/ros2_ws/install/local_setup.sh'
+[91.074s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/coro/ros2_ws/install/_local_setup_util_sh.py'
+[91.074s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/coro/ros2_ws/install/setup.sh'
+[91.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/coro/ros2_ws/install/local_setup.bash'
+[91.075s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/coro/ros2_ws/install/setup.bash'
+[91.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/coro/ros2_ws/install/local_setup.zsh'
+[91.075s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/coro/ros2_ws/install/setup.zsh'

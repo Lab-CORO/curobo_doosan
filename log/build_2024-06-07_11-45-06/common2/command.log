@@ -1,0 +1,1 @@
+Invoking command in '/home/coro/ros2_ws/build/common2': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/common2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/common2

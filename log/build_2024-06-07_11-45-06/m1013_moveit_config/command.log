@@ -1,0 +1,1 @@
+Invoking command in '/home/coro/ros2_ws/build/m1013_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_moveit2/m1013_moveit_config -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/m1013_moveit_config

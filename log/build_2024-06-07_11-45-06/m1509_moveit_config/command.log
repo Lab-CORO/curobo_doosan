@@ -1,0 +1,4 @@
+Invoking command in '/home/coro/ros2_ws/build/m1509_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_moveit2/m1509_moveit_config -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/m1509_moveit_config
+Invoked command in '/home/coro/ros2_ws/build/m1509_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_moveit2/m1509_moveit_config -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/install/m1509_moveit_config
+Invoking command in '/home/coro/ros2_ws/build/m1509_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/m1509_moveit_config -- -j20 -l20
+Invoked command in '/home/coro/ros2_ws/build/m1509_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/m1509_moveit_config -- -j20 -l20

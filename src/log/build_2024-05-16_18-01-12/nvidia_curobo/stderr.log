@@ -1,0 +1,66 @@
+/home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py:476: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'long-description-content-type' will not be supported in future
+        versions. Please use the underscore name 'long_description_content_type' instead.
+
+        By 2024-Sep-26, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+/home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py:476: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'long-description-content-type' will not be supported in future
+        versions. Please use the underscore name 'long_description_content_type' instead.
+
+        By 2024-Sep-26, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+warning: no directories found matching 'src/curobo/curobolib/*.so'
+Traceback (most recent call last):
+  File "/home/coro/ros2_ws/src/curobo/setup.py", line 81, in <module>
+    setuptools.setup(
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 104, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 184, in setup
+    return run_commands(dist)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 200, in run_commands
+    dist.run_commands()
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 969, in run_commands
+    self.run_command(cmd)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py", line 967, in run_command
+    super().run_command(command)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+    cmd_obj.run()
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/command/build.py", line 132, in run
+    self.run_command(cmd_name)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 316, in run_command
+    self.distribution.run_command(command)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/dist.py", line 967, in run_command
+    super().run_command(command)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 988, in run_command
+    cmd_obj.run()
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 91, in run
+    _build_ext.run(self)
+  File "/home/coro/.local/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 359, in run
+    self.build_extensions()
+  File "/home/coro/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 522, in build_extensions
+    _check_cuda_version(compiler_name, compiler_version)
+  File "/home/coro/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 417, in _check_cuda_version
+    raise RuntimeError(CUDA_MISMATCH_MESSAGE.format(cuda_str_version, torch.version.cuda))
+RuntimeError: 
+The detected CUDA version (11.7) mismatches the version that was used to compile
+PyTorch (12.1). Please make sure to use the same CUDA versions.
+

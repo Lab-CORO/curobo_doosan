@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/velocity_pub/velocity_pub.egg-info
+writing ../../build/velocity_pub/velocity_pub.egg-info/PKG-INFO
+writing dependency_links to ../../build/velocity_pub/velocity_pub.egg-info/dependency_links.txt
+writing entry points to ../../build/velocity_pub/velocity_pub.egg-info/entry_points.txt
+writing requirements to ../../build/velocity_pub/velocity_pub.egg-info/requires.txt
+writing top-level names to ../../build/velocity_pub/velocity_pub.egg-info/top_level.txt
+writing manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'
+reading manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'
+writing manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/coro/ros2_ws/build/velocity_pub/build
+creating /home/coro/ros2_ws/build/velocity_pub/build/lib
+creating /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub
+copying velocity_pub/velocity_pub.py -> /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub
+copying velocity_pub/__init__.py -> /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub
+running install
+running install_lib
+creating /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub
+copying /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub/velocity_pub.py -> /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub
+copying /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub/__init__.py -> /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub
+byte-compiling /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub/velocity_pub.py to velocity_pub.cpython-310.pyc
+byte-compiling /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index
+creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index
+creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index/packages
+copying resource/velocity_pub -> /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index/packages
+copying package.xml -> /home/coro/ros2_ws/install/velocity_pub/share/velocity_pub
+running install_egg_info
+Copying ../../build/velocity_pub/velocity_pub.egg-info to /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub-0.0.0-py3.10.egg-info
+running install_scripts
+Installing joint_velocity_publisher script to /home/coro/ros2_ws/install/velocity_pub/lib/velocity_pub
+writing list of installed files to '/home/coro/ros2_ws/build/velocity_pub/install.log'

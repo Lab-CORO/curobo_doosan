@@ -1,0 +1,1 @@
+Invoking command in '/home/coro/ros2_ws/src/build/dsr_msgs2': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/src/build/dsr_msgs2 -- -j20 -l20

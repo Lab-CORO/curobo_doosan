@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/coro/ros2_ws/build/common2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/common2 -- -j20 -l20
+[0.058s] Invoked command in '/home/coro/ros2_ws/build/common2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/common2 -- -j20 -l20
+[0.104s] Invoking command in '/home/coro/ros2_ws/build/common2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/common2
+[0.139s] -- Install configuration: ""
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/ament_index/resource_index/package_run_dependencies/common2
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/ament_index/resource_index/parent_prefix_path/common2
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/environment/ament_prefix_path.sh
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/environment/ament_prefix_path.dsv
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/environment/path.sh
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/environment/path.dsv
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/local_setup.bash
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/local_setup.sh
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/local_setup.zsh
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/local_setup.dsv
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/package.dsv
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/ament_index/resource_index/packages/common2
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/cmake/common2Config.cmake
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/cmake/common2Config-version.cmake
+[0.139s] -- Installing: /home/coro/ros2_ws/install/common2/share/common2/package.xml
+[0.140s] [31mCMake Error at cmake_install.cmake:105 (file):
+[0.140s]   file INSTALL cannot find
+[0.140s]   "/home/coro/ros2_ws/src/doosan-robot2/common2/bin": No such file or
+[0.140s]   directory.
+[0.140s] 
+[0.140s] [0m
+[0.183s] Invoked command in '/home/coro/ros2_ws/build/common2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --install /home/coro/ros2_ws/build/common2

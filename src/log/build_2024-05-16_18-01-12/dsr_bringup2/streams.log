@@ -1,0 +1,26 @@
+[1.736s] Invoking command in '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2': PYTHONPATH=/home/coro/ros2_ws/src/build/dsr_bringup2/prefix_override:/home/coro/ros2_ws/src/install/dsr_bringup2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dsr_bringup2 build --build-base /home/coro/ros2_ws/src/build/dsr_bringup2/build install --record /home/coro/ros2_ws/src/build/dsr_bringup2/install.log --single-version-externally-managed install_data
+[1.873s] running egg_info
+[1.880s] writing ../../build/dsr_bringup2/dsr_bringup2.egg-info/PKG-INFO
+[1.880s] writing dependency_links to ../../build/dsr_bringup2/dsr_bringup2.egg-info/dependency_links.txt
+[1.880s] writing entry points to ../../build/dsr_bringup2/dsr_bringup2.egg-info/entry_points.txt
+[1.880s] writing requirements to ../../build/dsr_bringup2/dsr_bringup2.egg-info/requires.txt
+[1.880s] writing top-level names to ../../build/dsr_bringup2/dsr_bringup2.egg-info/top_level.txt
+[2.500s] writing manifest file '../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+[2.500s] running build
+[2.500s] running build_py
+[2.500s] copying dsr_bringup2/connection.py -> /home/coro/ros2_ws/src/build/dsr_bringup2/build/lib/dsr_bringup2
+[2.500s] copying dsr_bringup2/__init__.py -> /home/coro/ros2_ws/src/build/dsr_bringup2/build/lib/dsr_bringup2
+[2.501s] running install
+[2.503s] running install_lib
+[2.510s] running install_data
+[2.510s] copying resource/dsr_bringup2 -> /home/coro/ros2_ws/src/install/dsr_bringup2/share/ament_index/resource_index/packages
+[2.511s] copying package.xml -> /home/coro/ros2_ws/src/install/dsr_bringup2/share/dsr_bringup2
+[2.511s] copying launch/dsr_bringup2_rviz.launch.py -> /home/coro/ros2_ws/src/install/dsr_bringup2/share/dsr_bringup2/launch
+[2.511s] copying rviz/default.rviz -> /home/coro/ros2_ws/src/install/dsr_bringup2/share/dsr_bringup2/rviz
+[2.511s] running install_egg_info
+[2.518s] removing '/home/coro/ros2_ws/src/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2-0.1.2-py3.10.egg-info' (and everything under it)
+[2.518s] Copying ../../build/dsr_bringup2/dsr_bringup2.egg-info to /home/coro/ros2_ws/src/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2-0.1.2-py3.10.egg-info
+[2.519s] running install_scripts
+[2.587s] Installing connection script to /home/coro/ros2_ws/src/install/dsr_bringup2/lib/dsr_bringup2
+[2.587s] writing list of installed files to '/home/coro/ros2_ws/src/build/dsr_bringup2/install.log'
+[2.604s] Invoked command in '/home/coro/ros2_ws/src/doosan-robot2/dsr_bringup2' returned '0': PYTHONPATH=/home/coro/ros2_ws/src/build/dsr_bringup2/prefix_override:/home/coro/ros2_ws/src/install/dsr_bringup2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dsr_bringup2 build --build-base /home/coro/ros2_ws/src/build/dsr_bringup2/build install --record /home/coro/ros2_ws/src/build/dsr_bringup2/install.log --single-version-externally-managed install_data

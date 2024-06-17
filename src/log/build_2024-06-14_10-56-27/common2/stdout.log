@@ -1,0 +1,20 @@
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coro/ros2_ws/src/build/common2
+-- Install configuration: ""
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/package_run_dependencies/common2
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/parent_prefix_path/common2
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/ament_prefix_path.sh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/ament_prefix_path.dsv
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/path.sh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/path.dsv
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.bash
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.sh
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.zsh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.dsv
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/package.dsv
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/packages/common2
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/cmake/common2Config.cmake
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/cmake/common2Config-version.cmake
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/package.xml

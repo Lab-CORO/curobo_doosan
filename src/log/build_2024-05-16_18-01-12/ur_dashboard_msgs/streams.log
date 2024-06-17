@@ -1,0 +1,481 @@
+[0.016s] Invoking command in '/home/coro/ros2_ws/src/build/ur_dashboard_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coro/ros2_ws/src/build/ur_dashboard_msgs -- -j20 -l20
+[0.158s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_generator_c[0m
+[0.158s] [  0%] Built target ur_dashboard_msgs__cpp
+[0.158s] [ 12%] Built target ur_dashboard_msgs__rosidl_generator_c
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_cpp[0m
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.159s] [ 12%] Built target ament_cmake_python_copy_ur_dashboard_msgs
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_c[0m
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_introspection_c[0m
+[0.159s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.159s] [ 24%] Built target ur_dashboard_msgs__rosidl_typesupport_introspection_c
+[0.159s] [ 59%] Built target ur_dashboard_msgs__rosidl_typesupport_c
+[0.160s] [ 60%] Built target ur_dashboard_msgs__rosidl_typesupport_introspection_cpp
+[0.160s] [ 60%] Built target ur_dashboard_msgs__rosidl_typesupport_cpp
+[0.160s] [ 72%] Built target ur_dashboard_msgs__rosidl_typesupport_fastrtps_cpp
+[0.160s] [ 84%] Built target ur_dashboard_msgs__rosidl_typesupport_fastrtps_c
+[0.160s] [ 84%] Built target ur_dashboard_msgs
+[0.160s] [ 85%] Built target ur_dashboard_msgs__py
+[0.160s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_generator_py[0m
+[0.160s] [ 96%] Built target ur_dashboard_msgs__rosidl_generator_py
+[0.160s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_c__pyext[0m
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target ur_dashboard_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.161s] [ 97%] Built target ur_dashboard_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.161s] [ 99%] Built target ur_dashboard_msgs__rosidl_typesupport_introspection_c__pyext
+[0.161s] [100%] Built target ur_dashboard_msgs__rosidl_typesupport_c__pyext
+[0.193s] running egg_info
+[0.209s] writing ur_dashboard_msgs.egg-info/PKG-INFO
+[0.209s] writing dependency_links to ur_dashboard_msgs.egg-info/dependency_links.txt
+[0.210s] writing top-level names to ur_dashboard_msgs.egg-info/top_level.txt
+[0.443s] reading manifest file 'ur_dashboard_msgs.egg-info/SOURCES.txt'
+[0.443s] writing manifest file 'ur_dashboard_msgs.egg-info/SOURCES.txt'
+[0.462s] [100%] Built target ament_cmake_python_build_ur_dashboard_msgs_egg
+[1.262s] Invoked command in '/home/coro/ros2_ws/src/build/ur_dashboard_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coro/ros2_ws/src/build/ur_dashboard_msgs -- -j20 -l20
+[1.393s] Invoking command in '/home/coro/ros2_ws/src/build/ur_dashboard_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coro/ros2_ws/src/build/ur_dashboard_msgs
+[1.398s] -- Install configuration: ""
+[1.398s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ament_index/resource_index/rosidl_interfaces/ur_dashboard_msgs
+[1.398s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs
+[1.398s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg
+[1.398s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/robot_mode.h
+[1.398s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__struct.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__functions.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__functions.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__type_support.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__struct.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__type_support.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__functions.c
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__type_support.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__functions.h
+[1.399s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__struct.h
+[1.400s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__functions.c
+[1.400s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__functions.c
+[1.400s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.400s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/safety_mode.h
+[1.400s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/program_state.h
+[1.400s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/popup.h
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_program_state.h
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/add_to_log.h
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__type_support.h
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__struct.h
+[1.401s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__functions.c
+[1.402s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__functions.c
+[1.402s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__type_support.h
+[1.402s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__struct.h
+[1.402s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__functions.c
+[1.403s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__struct.h
+[1.403s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__struct.h
+[1.403s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__functions.h
+[1.403s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__functions.c
+[1.404s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__functions.c
+[1.404s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__type_support.h
+[1.404s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__functions.c
+[1.404s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__type_support.h
+[1.404s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__functions.h
+[1.405s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__struct.h
+[1.406s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__functions.h
+[1.407s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__functions.h
+[1.407s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__type_support.h
+[1.407s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__type_support.h
+[1.408s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__struct.h
+[1.408s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__functions.h
+[1.408s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__functions.h
+[1.409s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__type_support.h
+[1.409s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__type_support.h
+[1.409s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__functions.c
+[1.409s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__type_support.h
+[1.409s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__struct.h
+[1.410s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__functions.h
+[1.411s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__functions.c
+[1.411s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__functions.c
+[1.411s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__functions.h
+[1.411s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__type_support.h
+[1.411s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__struct.h
+[1.411s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__functions.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__struct.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__struct.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__functions.c
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__functions.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_robot_mode.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/raw_request.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_loaded_program.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_safety_mode.h
+[1.412s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/load.h
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/is_program_saved.h
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/is_program_running.h
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__type_support.h
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__functions.c
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__functions.h
+[1.413s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__struct.h
+[1.414s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/set_mode.h
+[1.415s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/library_path.sh
+[1.415s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/library_path.dsv
+[1.416s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_generator_c.so
+[1.416s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_generator_c.so" to ""
+[1.416s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs
+[1.416s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg
+[1.416s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.416s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv
+[1.417s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_fastrtps_c.h
+[1.417s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action
+[1.418s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_fastrtps_c.h
+[1.418s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_fastrtps_c.so
+[1.418s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[1.418s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs
+[1.419s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.419s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__type_support.c
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__type_support.c
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__type_support.c
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_introspection_c.h
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_introspection_c.h
+[1.419s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_introspection_c.h
+[1.419s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv
+[1.420s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail
+[1.420s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__type_support.c
+[1.420s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_introspection_c.h
+[1.420s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__type_support.c
+[1.420s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__type_support.c
+[1.421s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__type_support.c
+[1.421s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_introspection_c.h
+[1.421s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__type_support.c
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_introspection_c.h
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__type_support.c
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__type_support.c
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__type_support.c
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_introspection_c.h
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__rosidl_typesupport_introspection_c.h
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_introspection_c.h
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_introspection_c.h
+[1.422s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_introspection_c.h
+[1.423s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__type_support.c
+[1.423s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__rosidl_typesupport_introspection_c.h
+[1.424s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_introspection_c.h
+[1.425s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__type_support.c
+[1.425s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action
+[1.425s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail
+[1.425s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_introspection_c.h
+[1.425s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__type_support.c
+[1.425s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_introspection_c.so
+[1.426s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_introspection_c.so" to ""
+[1.426s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_c.so
+[1.426s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_c.so" to ""
+[1.426s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs
+[1.429s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg
+[1.429s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/program_state.hpp
+[1.430s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__traits.hpp
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__builder.hpp
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__builder.hpp
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__traits.hpp
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__traits.hpp
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__builder.hpp
+[1.430s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__struct.hpp
+[1.431s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__struct.hpp
+[1.431s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__struct.hpp
+[1.431s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/robot_mode.hpp
+[1.431s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/safety_mode.hpp
+[1.431s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv
+[1.431s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_loaded_program.hpp
+[1.432s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/is_program_running.hpp
+[1.432s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_program_state.hpp
+[1.432s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail
+[1.435s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__traits.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__builder.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__traits.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__traits.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__builder.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__traits.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__traits.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__traits.hpp
+[1.440s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__traits.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__struct.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__struct.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__struct.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__builder.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__builder.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__struct.hpp
+[1.441s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__builder.hpp
+[1.442s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__struct.hpp
+[1.442s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__struct.hpp
+[1.442s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__struct.hpp
+[1.442s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__builder.hpp
+[1.442s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__builder.hpp
+[1.442s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__builder.hpp
+[1.443s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__traits.hpp
+[1.443s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__builder.hpp
+[1.443s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__struct.hpp
+[1.443s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__traits.hpp
+[1.443s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__traits.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__struct.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__struct.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__builder.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_robot_mode.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/is_program_saved.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/load.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/raw_request.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/add_to_log.hpp
+[1.444s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/get_safety_mode.hpp
+[1.445s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/popup.hpp
+[1.445s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action
+[1.445s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail
+[1.445s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__builder.hpp
+[1.445s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__traits.hpp
+[1.445s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__struct.hpp
+[1.445s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/set_mode.hpp
+[1.445s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs
+[1.445s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg
+[1.446s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail
+[1.446s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[1.446s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[1.446s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/dds_fastrtps
+[1.446s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.446s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.446s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv
+[1.446s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail
+[1.447s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_fastrtps_cpp.hpp
+[1.447s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_fastrtps_cpp.hpp
+[1.447s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[1.447s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.447s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_fastrtps_cpp.hpp
+[1.448s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_fastrtps_cpp.hpp
+[1.448s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[1.448s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__rosidl_typesupport_fastrtps_cpp.hpp
+[1.448s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/dds_fastrtps
+[1.448s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__rosidl_typesupport_fastrtps_cpp.hpp
+[1.448s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_fastrtps_cpp.hpp
+[1.448s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action
+[1.449s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail
+[1.449s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/dds_fastrtps
+[1.449s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[1.454s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.454s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.454s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs
+[1.454s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg
+[1.454s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail
+[1.454s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__rosidl_typesupport_introspection_cpp.hpp
+[1.454s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__type_support.cpp
+[1.454s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/program_state__type_support.cpp
+[1.454s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__type_support.cpp
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/robot_mode__rosidl_typesupport_introspection_cpp.hpp
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/msg/detail/safety_mode__rosidl_typesupport_introspection_cpp.hpp
+[1.455s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv
+[1.455s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__type_support.cpp
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__type_support.cpp
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__type_support.cpp
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__type_support.cpp
+[1.455s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__rosidl_typesupport_introspection_cpp.hpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__rosidl_typesupport_introspection_cpp.hpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__type_support.cpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/popup__rosidl_typesupport_introspection_cpp.hpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_safety_mode__rosidl_typesupport_introspection_cpp.hpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_running__rosidl_typesupport_introspection_cpp.hpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/is_program_saved__rosidl_typesupport_introspection_cpp.hpp
+[1.456s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/raw_request__type_support.cpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__type_support.cpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__type_support.cpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/load__type_support.cpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__type_support.cpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_loaded_program__rosidl_typesupport_introspection_cpp.hpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_robot_mode__rosidl_typesupport_introspection_cpp.hpp
+[1.457s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/add_to_log__rosidl_typesupport_introspection_cpp.hpp
+[1.458s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/srv/detail/get_program_state__rosidl_typesupport_introspection_cpp.hpp
+[1.458s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action
+[1.458s] -- Up-to-date: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail
+[1.458s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp
+[1.458s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/include/ur_dashboard_msgs/ur_dashboard_msgs/action/detail/set_mode__type_support.cpp
+[1.459s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_introspection_cpp.so
+[1.459s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[1.459s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_cpp.so
+[1.459s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_typesupport_cpp.so" to ""
+[1.459s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/pythonpath.sh
+[1.459s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/pythonpath.dsv
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs-2.2.11-py3.10.egg-info
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs-2.2.11-py3.10.egg-info/PKG-INFO
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs-2.2.11-py3.10.egg-info/top_level.txt
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs-2.2.11-py3.10.egg-info/dependency_links.txt
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs-2.2.11-py3.10.egg-info/SOURCES.txt
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/_ur_dashboard_msgs_s.ep.rosidl_typesupport_c.c
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_program_state_s.c
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_robot_mode.py
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_safety_mode.py
+[1.460s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_safety_mode_s.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_robot_mode_s.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/__init__.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_program_state.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/libur_dashboard_msgs__rosidl_generator_py.so
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/_ur_dashboard_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/__init__.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/_ur_dashboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_load.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_raw_request_s.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_robot_mode.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_loaded_program_s.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_safety_mode.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_program_state_s.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_add_to_log.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_popup.py
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_is_program_running_s.c
+[1.461s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_is_program_saved_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_is_program_saved.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_loaded_program.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_robot_mode_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_raw_request.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_popup_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_is_program_running.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_safety_mode_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_add_to_log_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/__init__.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_load_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_program_state.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action/_set_mode_s.c
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action/__init__.py
+[1.462s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action/_set_mode.py
+[1.496s] Listing '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/__init__.py'...
+[1.496s] Listing '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action/__init__.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/action/_set_mode.py'...
+[1.496s] Listing '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/__init__.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_program_state.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_robot_mode.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/msg/_safety_mode.py'...
+[1.496s] Listing '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/__init__.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_add_to_log.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_loaded_program.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_program_state.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_robot_mode.py'...
+[1.496s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_get_safety_mode.py'...
+[1.497s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_is_program_running.py'...
+[1.497s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_is_program_saved.py'...
+[1.497s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_load.py'...
+[1.497s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_popup.py'...
+[1.497s] Compiling '/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/srv/_raw_request.py'...
+[1.498s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.499s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.499s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.499s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.499s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.499s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/local/lib/python3.10/dist-packages/ur_dashboard_msgs/ur_dashboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.499s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_generator_py.so
+[1.500s] -- Set runtime path of "/home/coro/ros2_ws/src/install/ur_dashboard_msgs/lib/libur_dashboard_msgs__rosidl_generator_py.so" to ""
+[1.500s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/ProgramState.idl
+[1.507s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/RobotMode.idl
+[1.507s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/SafetyMode.idl
+[1.507s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/AddToLog.idl
+[1.508s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetLoadedProgram.idl
+[1.508s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetProgramState.idl
+[1.508s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetRobotMode.idl
+[1.509s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetSafetyMode.idl
+[1.509s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramRunning.idl
+[1.509s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramSaved.idl
+[1.510s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Load.idl
+[1.513s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Popup.idl
+[1.513s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/RawRequest.idl
+[1.513s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/action/SetMode.idl
+[1.513s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/ProgramState.msg
+[1.514s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/RobotMode.msg
+[1.514s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/msg/SafetyMode.msg
+[1.514s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/AddToLog.srv
+[1.514s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/AddToLog_Request.msg
+[1.514s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/AddToLog_Response.msg
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetLoadedProgram.srv
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetLoadedProgram_Request.msg
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetLoadedProgram_Response.msg
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetProgramState.srv
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetProgramState_Request.msg
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetProgramState_Response.msg
+[1.515s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetRobotMode.srv
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetRobotMode_Request.msg
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetRobotMode_Response.msg
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetSafetyMode.srv
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetSafetyMode_Request.msg
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/GetSafetyMode_Response.msg
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramRunning.srv
+[1.516s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramRunning_Request.msg
+[1.517s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramRunning_Response.msg
+[1.517s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramSaved.srv
+[1.517s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramSaved_Request.msg
+[1.517s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/IsProgramSaved_Response.msg
+[1.517s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Load.srv
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Load_Request.msg
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Load_Response.msg
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Popup.srv
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Popup_Request.msg
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/Popup_Response.msg
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/RawRequest.srv
+[1.518s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/RawRequest_Request.msg
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/srv/RawRequest_Response.msg
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/action/SetMode.action
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ament_index/resource_index/package_run_dependencies/ur_dashboard_msgs
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ament_index/resource_index/parent_prefix_path/ur_dashboard_msgs
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/ament_prefix_path.sh
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/ament_prefix_path.dsv
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/path.sh
+[1.519s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/environment/path.dsv
+[1.520s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/local_setup.bash
+[1.520s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/local_setup.sh
+[1.520s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/local_setup.zsh
+[1.520s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/local_setup.dsv
+[1.520s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/package.dsv
+[1.520s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ament_index/resource_index/packages/ur_dashboard_msgs
+[1.521s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_generator_cExport.cmake
+[1.521s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.521s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.521s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.521s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.522s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.522s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_cExport.cmake
+[1.522s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.522s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_generator_cppExport.cmake
+[1.522s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.523s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.523s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.523s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.523s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_cppExport.cmake
+[1.523s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.523s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_generator_pyExport.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/export_ur_dashboard_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/rosidl_cmake-extras.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.524s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.525s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.525s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgsConfig.cmake
+[1.525s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/cmake/ur_dashboard_msgsConfig-version.cmake
+[1.525s] -- Installing: /home/coro/ros2_ws/src/install/ur_dashboard_msgs/share/ur_dashboard_msgs/package.xml
+[1.527s] Invoked command in '/home/coro/ros2_ws/src/build/ur_dashboard_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coro/ros2_ws/src/build/ur_dashboard_msgs

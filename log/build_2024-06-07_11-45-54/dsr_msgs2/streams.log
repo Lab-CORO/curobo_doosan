@@ -1,0 +1,23 @@
+[0.023s] Invoking command in '/home/coro/ros2_ws/build/dsr_msgs2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/coro/ros2_ws/install/dsr_bringup2:/opt/ros/humble /home/coro/.local/bin/cmake --build /home/coro/ros2_ws/build/dsr_msgs2 -- -j20 -l20
+[0.175s] [  0%] Built target dsr_msgs2__cpp
+[0.175s] [  0%] Built target ament_cmake_python_copy_dsr_msgs2
+[0.175s] [ 12%] Built target dsr_msgs2__rosidl_generator_c
+[0.186s] [ 25%] Built target dsr_msgs2__rosidl_typesupport_c
+[0.195s] [ 38%] Built target dsr_msgs2__rosidl_typesupport_introspection_c
+[0.226s] [ 50%] Built target dsr_msgs2__rosidl_typesupport_cpp
+[0.243s] [ 63%] Built target dsr_msgs2__rosidl_typesupport_introspection_cpp
+[0.255s] [ 75%] Built target dsr_msgs2__rosidl_typesupport_fastrtps_cpp
+[0.263s] [ 88%] Built target dsr_msgs2__rosidl_typesupport_fastrtps_c
+[0.270s] [ 88%] Built target dsr_msgs2
+[0.278s] running egg_info
+[0.278s] [ 88%] Built target dsr_msgs2__py
+[0.285s] writing dsr_msgs2.egg-info/PKG-INFO
+[0.285s] writing dependency_links to dsr_msgs2.egg-info/dependency_links.txt
+[0.285s] writing top-level names to dsr_msgs2.egg-info/top_level.txt
+[0.353s] [100%] Built target dsr_msgs2__rosidl_generator_py
+[0.363s] [100%] Built target dsr_msgs2__rosidl_typesupport_fastrtps_c__pyext
+[0.363s] [100%] Built target dsr_msgs2__rosidl_typesupport_introspection_c__pyext
+[0.363s] [100%] Built target dsr_msgs2__rosidl_typesupport_c__pyext
+[0.534s] reading manifest file 'dsr_msgs2.egg-info/SOURCES.txt'
+[0.536s] writing manifest file 'dsr_msgs2.egg-info/SOURCES.txt'
+[0.548s] [100%] Built target ament_cmake_python_build_dsr_msgs2_egg

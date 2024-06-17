@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.000107] (-) JobUnselected: {'identifier': 'a0509_moveit_config'}
+[0.000124] (-) JobUnselected: {'identifier': 'a0912_moveit_config'}
+[0.000133] (-) JobUnselected: {'identifier': 'common2'}
+[0.000142] (-) JobUnselected: {'identifier': 'dsr_bringup2'}
+[0.000150] (-) JobUnselected: {'identifier': 'dsr_controller2'}
+[0.000158] (-) JobUnselected: {'identifier': 'dsr_description2'}
+[0.000165] (-) JobUnselected: {'identifier': 'dsr_gazebo2'}
+[0.000173] (-) JobUnselected: {'identifier': 'dsr_hardware2'}
+[0.000180] (-) JobUnselected: {'identifier': 'dsr_msgs2'}
+[0.000188] (-) JobUnselected: {'identifier': 'e0509_moveit_config'}
+[0.000195] (-) JobUnselected: {'identifier': 'h2017_moveit_config'}
+[0.000203] (-) JobUnselected: {'identifier': 'h2515_moveit_config'}
+[0.000211] (-) JobUnselected: {'identifier': 'm0609_moveit_config'}
+[0.000218] (-) JobUnselected: {'identifier': 'm0617_moveit_config'}
+[0.000226] (-) JobUnselected: {'identifier': 'm1013_moveit_config'}
+[0.000233] (-) JobUnselected: {'identifier': 'm1509_moveit_config'}
+[0.000242] (velocity_pub) JobQueued: {'identifier': 'velocity_pub', 'dependencies': OrderedDict()}
+[0.000253] (velocity_pub) JobStarted: {'identifier': 'velocity_pub'}
+[0.099517] (-) TimerEvent: {}
+[0.199706] (-) TimerEvent: {}
+[0.299906] (-) TimerEvent: {}
+[0.337013] (velocity_pub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/velocity_pub', 'build', '--build-base', '/home/coro/ros2_ws/build/velocity_pub/build', 'install', '--record', '/home/coro/ros2_ws/build/velocity_pub/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/coro/ros2_ws/src/velocity_pub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_CA:en', 'USER': 'coro', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.7/lib64::/home/coro/.local/lib/python3.10/site-packages/nvidia/cudnn/lib', 'HOME': '/home/coro', 'OLDPWD': '/home/coro/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1987', 'SYSTEMD_EXEC_PID': '2429', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5734', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'coro', 'JOURNAL_STREAM': '8:43531', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'coro', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda-11.7/bin:/home/coro/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/coro:@/tmp/.ICE-unix/2383,unix/coro:/tmp/.ICE-unix/2383', 'INVOCATION_ID': '7757ee0c5e3d46aebceb64dfb444f7c6', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:4af1ca11-fe44-497a-8ecc-cf5657ec777f', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/coro/ros2_ws/build/velocity_pub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/coro/ros2_ws/build/velocity_pub/prefix_override:/home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.399979] (-) TimerEvent: {}
+[0.453835] (velocity_pub) StdoutLine: {'line': b'running egg_info\n'}
+[0.454017] (velocity_pub) StdoutLine: {'line': b'creating ../../build/velocity_pub/velocity_pub.egg-info\n'}
+[0.460509] (velocity_pub) StdoutLine: {'line': b'writing ../../build/velocity_pub/velocity_pub.egg-info/PKG-INFO\n'}
+[0.460633] (velocity_pub) StdoutLine: {'line': b'writing dependency_links to ../../build/velocity_pub/velocity_pub.egg-info/dependency_links.txt\n'}
+[0.460718] (velocity_pub) StdoutLine: {'line': b'writing entry points to ../../build/velocity_pub/velocity_pub.egg-info/entry_points.txt\n'}
+[0.460787] (velocity_pub) StdoutLine: {'line': b'writing requirements to ../../build/velocity_pub/velocity_pub.egg-info/requires.txt\n'}
+[0.460823] (velocity_pub) StdoutLine: {'line': b'writing top-level names to ../../build/velocity_pub/velocity_pub.egg-info/top_level.txt\n'}
+[0.460876] (velocity_pub) StdoutLine: {'line': b"writing manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'\n"}
+[0.500080] (-) TimerEvent: {}
+[0.600239] (-) TimerEvent: {}
+[0.700496] (-) TimerEvent: {}
+[0.800689] (-) TimerEvent: {}
+[0.900928] (-) TimerEvent: {}
+[1.001114] (-) TimerEvent: {}
+[1.101390] (-) TimerEvent: {}
+[1.201694] (-) TimerEvent: {}
+[1.302025] (-) TimerEvent: {}
+[1.402335] (-) TimerEvent: {}
+[1.502642] (-) TimerEvent: {}
+[1.602897] (-) TimerEvent: {}
+[1.703202] (-) TimerEvent: {}
+[1.803503] (-) TimerEvent: {}
+[1.903775] (-) TimerEvent: {}
+[2.004087] (-) TimerEvent: {}
+[2.054535] (velocity_pub) StdoutLine: {'line': b"reading manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'\n"}
+[2.054760] (velocity_pub) StdoutLine: {'line': b"writing manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'\n"}
+[2.054830] (velocity_pub) StdoutLine: {'line': b'running build\n'}
+[2.054860] (velocity_pub) StdoutLine: {'line': b'running build_py\n'}
+[2.055013] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/build/velocity_pub/build\n'}
+[2.055065] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/build/velocity_pub/build/lib\n'}
+[2.055103] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub\n'}
+[2.055239] (velocity_pub) StdoutLine: {'line': b'copying velocity_pub/velocity_pub.py -> /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub\n'}
+[2.055268] (velocity_pub) StdoutLine: {'line': b'copying velocity_pub/__init__.py -> /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub\n'}
+[2.055289] (velocity_pub) StdoutLine: {'line': b'running install\n'}
+[2.058062] (velocity_pub) StdoutLine: {'line': b'running install_lib\n'}
+[2.066882] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub\n'}
+[2.066943] (velocity_pub) StdoutLine: {'line': b'copying /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub/velocity_pub.py -> /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub\n'}
+[2.066971] (velocity_pub) StdoutLine: {'line': b'copying /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub/__init__.py -> /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub\n'}
+[2.067151] (velocity_pub) StdoutLine: {'line': b'byte-compiling /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub/velocity_pub.py to velocity_pub.cpython-310.pyc\n'}
+[2.068490] (velocity_pub) StdoutLine: {'line': b'byte-compiling /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub/__init__.py to __init__.cpython-310.pyc\n'}
+[2.068545] (velocity_pub) StdoutLine: {'line': b'running install_data\n'}
+[2.068572] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index\n'}
+[2.068595] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index\n'}
+[2.068617] (velocity_pub) StdoutLine: {'line': b'creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index/packages\n'}
+[2.068639] (velocity_pub) StdoutLine: {'line': b'copying resource/velocity_pub -> /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index/packages\n'}
+[2.068660] (velocity_pub) StdoutLine: {'line': b'copying package.xml -> /home/coro/ros2_ws/install/velocity_pub/share/velocity_pub\n'}
+[2.068681] (velocity_pub) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.075510] (velocity_pub) StdoutLine: {'line': b'Copying ../../build/velocity_pub/velocity_pub.egg-info to /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub-0.0.0-py3.10.egg-info\n'}
+[2.075585] (velocity_pub) StdoutLine: {'line': b'running install_scripts\n'}
+[2.104254] (-) TimerEvent: {}
+[2.133681] (velocity_pub) StdoutLine: {'line': b'Installing joint_velocity_publisher script to /home/coro/ros2_ws/install/velocity_pub/lib/velocity_pub\n'}
+[2.133764] (velocity_pub) StdoutLine: {'line': b"writing list of installed files to '/home/coro/ros2_ws/build/velocity_pub/install.log'\n"}
+[2.146174] (velocity_pub) CommandEnded: {'returncode': 0}
+[2.150268] (velocity_pub) JobEnded: {'identifier': 'velocity_pub', 'rc': 0}
+[2.150489] (-) EventReactorShutdown: {}

@@ -1,0 +1,155 @@
+[0.011s] Invoking command in '/home/coro/ros2_ws/src/build/common2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/common2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/src/install/common2
+[0.135s] -- The C compiler identification is GNU 11.4.0
+[0.145s] -- The CXX compiler identification is GNU 11.4.0
+[0.151s] -- Detecting C compiler ABI info
+[0.193s] -- Detecting C compiler ABI info - done
+[0.198s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.199s] -- Detecting C compile features
+[0.199s] -- Detecting C compile features - done
+[0.201s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.253s] -- Detecting CXX compile features
+[0.253s] -- Detecting CXX compile features - done
+[0.267s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.489s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.646s] -- Configuring done
+[0.647s] -- Generating done
+[0.647s] -- Build files have been written to: /home/coro/ros2_ws/src/build/common2
+[1.291s] Invoked command in '/home/coro/ros2_ws/src/build/common2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/common2 -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/src/install/common2
+[1.292s] Invoking command in '/home/coro/ros2_ws/src/build/common2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coro/ros2_ws/src/build/common2 -- -j20 -l20
+[1.312s] Invoked command in '/home/coro/ros2_ws/src/build/common2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/coro/ros2_ws/src/build/common2 -- -j20 -l20
+[1.331s] Invoking command in '/home/coro/ros2_ws/src/build/common2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coro/ros2_ws/src/build/common2
+[1.337s] -- Install configuration: ""
+[1.338s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/package_run_dependencies/common2
+[1.338s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/parent_prefix_path/common2
+[1.338s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/ament_prefix_path.sh
+[1.338s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/ament_prefix_path.dsv
+[1.338s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/path.sh
+[1.339s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/path.dsv
+[1.339s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.bash
+[1.339s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.sh
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.zsh
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.dsv
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/package.dsv
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/packages/common2
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/cmake/common2Config.cmake
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/cmake/common2Config-version.cmake
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/package.xml
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_init.py
+[1.340s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DRFC.py
+[1.341s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DSR_util2.py
+[1.341s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DSR_ROBOT2.py
+[1.341s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_error2.py
+[1.342s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_tcp_server2.py
+[1.342s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_common2.py
+[1.342s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/__init__.py
+[1.342s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_tcp_client2.py
+[1.343s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config
+[1.343s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF
+[1.343s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1509.xml
+[1.343s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1013a.xml
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0912s.xml
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1013
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1013/DV3101300.xml
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/vdi
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/vdi/vdi.xml
+[1.344s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1509
+[1.345s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1509/DV3150900.xml
+[1.345s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0609
+[1.345s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0609/DV3060900.xml
+[1.345s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0617
+[1.345s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0617/DV3061700.xml
+[1.345s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0509.xml
+[1.346s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1013.xml
+[1.346s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0617a.xml
+[1.347s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0912.xml
+[1.347s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0617.xml
+[1.347s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0307.xml
+[1.348s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1509a.xml
+[1.348s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/h2017.xml
+[1.348s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0609a.xml
+[1.349s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0609.xml
+[1.349s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0509s.xml
+[1.349s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/h2515.xml
+[1.350s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_a0307.xml
+[1.350s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV
+[1.350s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_A0509.xml
+[1.350s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M1013.xml
+[1.351s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_H2515.xml
+[1.351s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M0906.xml
+[1.351s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_A0912.xml
+[1.351s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M0609.xml
+[1.352s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M0617.xml
+[1.352s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_H2017.xml
+[1.352s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M1310.xml
+[1.352s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M1509.xml
+[1.353s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M1706.xml
+[1.353s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M0915.xml
+[1.353s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/CommandDefine.org
+[1.355s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/CommandDefine.xml
+[1.355s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m1509.xml
+[1.355s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config.xml
+[1.355s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m0617.xml
+[1.356s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_a0509.xml
+[1.356s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m1013.xml
+[1.356s] -- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m0609.xml
+[1.357s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin
+[1.357s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF
+[1.357s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/run_drcf.sh
+[1.357s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config
+[1.357s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF
+[1.357s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1509.xml
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1013a.xml
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0912s.xml
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1013
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1013/DV3101300.xml
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/vdi
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/vdi/vdi.xml
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1509
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1509/DV3150900.xml
+[1.358s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0609
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0609/DV3060900.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0617
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0617/DV3061700.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0509.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1013.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0617a.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0912.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0617.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0307.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1509a.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/h2017.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0609a.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0609.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0509s.xml
+[1.359s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/h2515.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_a0307.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_A0509.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M1013.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_H2515.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M0906.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_A0912.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M0609.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M0617.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_H2017.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M1310.xml
+[1.360s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M1509.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M1706.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M0915.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/CommandDefine.org
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/CommandDefine.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m1509.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m0617.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_a0509.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m1013.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m0609.xml
+[1.361s] -- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/DRCF64
+[1.369s] -- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/DRCF64
+[1.369s] -- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/run_drcf.sh
+[1.371s] Invoked command in '/home/coro/ros2_ws/src/build/common2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/coro/ros2_ws/src/build/common2

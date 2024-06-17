@@ -1,0 +1,37 @@
+[0.337s] Invoking command in '/home/coro/ros2_ws/src/velocity_pub': PYTHONPATH=/home/coro/ros2_ws/build/velocity_pub/prefix_override:/home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/velocity_pub build --build-base /home/coro/ros2_ws/build/velocity_pub/build install --record /home/coro/ros2_ws/build/velocity_pub/install.log --single-version-externally-managed install_data
+[0.454s] running egg_info
+[0.454s] creating ../../build/velocity_pub/velocity_pub.egg-info
+[0.460s] writing ../../build/velocity_pub/velocity_pub.egg-info/PKG-INFO
+[0.460s] writing dependency_links to ../../build/velocity_pub/velocity_pub.egg-info/dependency_links.txt
+[0.460s] writing entry points to ../../build/velocity_pub/velocity_pub.egg-info/entry_points.txt
+[0.461s] writing requirements to ../../build/velocity_pub/velocity_pub.egg-info/requires.txt
+[0.461s] writing top-level names to ../../build/velocity_pub/velocity_pub.egg-info/top_level.txt
+[0.461s] writing manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'
+[2.054s] reading manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'
+[2.055s] writing manifest file '../../build/velocity_pub/velocity_pub.egg-info/SOURCES.txt'
+[2.055s] running build
+[2.055s] running build_py
+[2.055s] creating /home/coro/ros2_ws/build/velocity_pub/build
+[2.055s] creating /home/coro/ros2_ws/build/velocity_pub/build/lib
+[2.055s] creating /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub
+[2.055s] copying velocity_pub/velocity_pub.py -> /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub
+[2.055s] copying velocity_pub/__init__.py -> /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub
+[2.055s] running install
+[2.058s] running install_lib
+[2.067s] creating /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub
+[2.067s] copying /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub/velocity_pub.py -> /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub
+[2.067s] copying /home/coro/ros2_ws/build/velocity_pub/build/lib/velocity_pub/__init__.py -> /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub
+[2.067s] byte-compiling /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub/velocity_pub.py to velocity_pub.cpython-310.pyc
+[2.068s] byte-compiling /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub/__init__.py to __init__.cpython-310.pyc
+[2.068s] running install_data
+[2.068s] creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index
+[2.068s] creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index
+[2.068s] creating /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index/packages
+[2.068s] copying resource/velocity_pub -> /home/coro/ros2_ws/install/velocity_pub/share/ament_index/resource_index/packages
+[2.068s] copying package.xml -> /home/coro/ros2_ws/install/velocity_pub/share/velocity_pub
+[2.068s] running install_egg_info
+[2.075s] Copying ../../build/velocity_pub/velocity_pub.egg-info to /home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages/velocity_pub-0.0.0-py3.10.egg-info
+[2.075s] running install_scripts
+[2.133s] Installing joint_velocity_publisher script to /home/coro/ros2_ws/install/velocity_pub/lib/velocity_pub
+[2.134s] writing list of installed files to '/home/coro/ros2_ws/build/velocity_pub/install.log'
+[2.146s] Invoked command in '/home/coro/ros2_ws/src/velocity_pub' returned '0': PYTHONPATH=/home/coro/ros2_ws/build/velocity_pub/prefix_override:/home/coro/ros2_ws/install/velocity_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/velocity_pub build --build-base /home/coro/ros2_ws/build/velocity_pub/build install --record /home/coro/ros2_ws/build/velocity_pub/install.log --single-version-externally-managed install_data

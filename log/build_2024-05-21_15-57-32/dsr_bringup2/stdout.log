@@ -1,0 +1,38 @@
+running egg_info
+creating ../../../build/dsr_bringup2/dsr_bringup2.egg-info
+writing ../../../build/dsr_bringup2/dsr_bringup2.egg-info/PKG-INFO
+writing dependency_links to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/dependency_links.txt
+writing entry points to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/entry_points.txt
+writing requirements to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/requires.txt
+writing top-level names to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/top_level.txt
+writing manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+writing manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/coro/ros2_ws/build/dsr_bringup2/build
+creating /home/coro/ros2_ws/build/dsr_bringup2/build/lib
+creating /home/coro/ros2_ws/build/dsr_bringup2/build/lib/dsr_bringup2
+copying dsr_bringup2/connection.py -> /home/coro/ros2_ws/build/dsr_bringup2/build/lib/dsr_bringup2
+copying dsr_bringup2/__init__.py -> /home/coro/ros2_ws/build/dsr_bringup2/build/lib/dsr_bringup2
+running install
+running install_lib
+creating /home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+copying /home/coro/ros2_ws/build/dsr_bringup2/build/lib/dsr_bringup2/connection.py -> /home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+copying /home/coro/ros2_ws/build/dsr_bringup2/build/lib/dsr_bringup2/__init__.py -> /home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+byte-compiling /home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/connection.py to connection.cpython-310.pyc
+byte-compiling /home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/coro/ros2_ws/install/dsr_bringup2/share/ament_index
+creating /home/coro/ros2_ws/install/dsr_bringup2/share/ament_index/resource_index
+creating /home/coro/ros2_ws/install/dsr_bringup2/share/ament_index/resource_index/packages
+copying resource/dsr_bringup2 -> /home/coro/ros2_ws/install/dsr_bringup2/share/ament_index/resource_index/packages
+copying package.xml -> /home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2
+creating /home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/launch
+copying launch/dsr_bringup2_rviz.launch.py -> /home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/launch
+creating /home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/rviz
+copying rviz/default.rviz -> /home/coro/ros2_ws/install/dsr_bringup2/share/dsr_bringup2/rviz
+running install_egg_info
+Copying ../../../build/dsr_bringup2/dsr_bringup2.egg-info to /home/coro/ros2_ws/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2-0.1.2-py3.10.egg-info
+running install_scripts
+Installing connection script to /home/coro/ros2_ws/install/dsr_bringup2/lib/dsr_bringup2
+writing list of installed files to '/home/coro/ros2_ws/build/dsr_bringup2/install.log'

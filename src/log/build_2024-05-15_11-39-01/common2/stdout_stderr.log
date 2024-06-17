@@ -1,0 +1,149 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/coro/ros2_ws/src/build/common2
+-- Install configuration: ""
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/package_run_dependencies/common2
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/parent_prefix_path/common2
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/ament_prefix_path.sh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/ament_prefix_path.dsv
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/path.sh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/environment/path.dsv
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.bash
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.sh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.zsh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/local_setup.dsv
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/package.dsv
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/ament_index/resource_index/packages/common2
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/cmake/common2Config.cmake
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/cmake/common2Config-version.cmake
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/package.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_init.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DRFC.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DSR_util2.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DSR_ROBOT2.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_error2.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_tcp_server2.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_common2.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/__init__.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/imp/DR_tcp_client2.py
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1013a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0912s.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1013
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1013/DV3101300.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/vdi
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/vdi/vdi.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1509
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m1509/DV3150900.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0609
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0609/DV3060900.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0617
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/Group/m0617/DV3061700.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1013.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0617a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0912.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0617.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0307.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m1509a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/h2017.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0609a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/m0609.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/a0509s.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/MF/h2515.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_a0307.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_A0509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M1013.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_H2515.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M0906.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_A0912.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M0609.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M0617.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_H2017.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M1310.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/MF_M1509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M1706.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/BV/M3_M0915.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/CommandDefine.org
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/CommandDefine.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m1509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m0617.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_a0509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m1013.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/bin/common2/config/config_m0609.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/run_drcf.sh
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1013a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0912s.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1013
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1013/DV3101300.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/vdi
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/vdi/vdi.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1509
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m1509/DV3150900.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0609
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0609/DV3060900.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0617
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/Group/m0617/DV3061700.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1013.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0617a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0912.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0617.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0307.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m1509a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/h2017.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0609a.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/m0609.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/a0509s.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/MF/h2515.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_a0307.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_A0509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M1013.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_H2515.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M0906.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_A0912.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M0609.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M0617.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_H2017.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M1310.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/MF_M1509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M1706.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/BV/M3_M0915.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/CommandDefine.org
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/CommandDefine.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m1509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m0617.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_a0509.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m1013.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/config/config_m0609.xml
+-- Installing: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/DRCF64
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/DRCF64
+-- Up-to-date: /home/coro/ros2_ws/src/install/common2/share/common2/bin/DRCF/run_drcf.sh

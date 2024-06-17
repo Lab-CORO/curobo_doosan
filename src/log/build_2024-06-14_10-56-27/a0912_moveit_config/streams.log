@@ -1,0 +1,18 @@
+[0.024s] Invoking command in '/home/coro/ros2_ws/src/build/a0912_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble /home/coro/.local/bin/cmake /home/coro/ros2_ws/src/doosan-robot2/dsr_moveit2/a0912_moveit_config -DCMAKE_INSTALL_PREFIX=/home/coro/ros2_ws/src/install/a0912_moveit_config
+[0.184s] -- The C compiler identification is GNU 11.4.0
+[0.216s] -- The CXX compiler identification is GNU 11.4.0
+[0.225s] -- Detecting C compiler ABI info
+[0.270s] -- Detecting C compiler ABI info - done
+[0.280s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.280s] -- Detecting C compile features
+[0.281s] -- Detecting C compile features - done
+[0.283s] -- Detecting CXX compiler ABI info
+[0.334s] -- Detecting CXX compiler ABI info - done
+[0.344s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.345s] -- Detecting CXX compile features
+[0.345s] -- Detecting CXX compile features - done
+[0.346s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.637s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.747s] -- Configuring done
+[0.749s] -- Generating done
+[0.750s] -- Build files have been written to: /home/coro/ros2_ws/src/build/a0912_moveit_config
