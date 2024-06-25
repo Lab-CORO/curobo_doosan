@@ -1,25 +1,128 @@
-import json
-import argparse
-import torch
-import rclpy
-from rclpy.node import Node
-from std_msgs.msg import String
+#
+# Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+#
+# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+# property and proprietary rights in and to this material, related
+# documentation and any modifications thereto. Any use, reproduction,
+# disclosure or distribution of this material and related documentation
+# without an express license agreement from NVIDIA CORPORATION or
+# its affiliates is strictly prohibited.
+#
 
+
+# Third Party
+import torch
+
+a = torch.zeros(4, device="cuda:0")
+
+# Standard Library
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--headless_mode",
+    type=str,
+    default=None,
+    help="To run headless, use one of [native, websocket], webrtc might not work.",
+)
+parser.add_argument("--robot", type=str, default="franka.yml", help="robot configuration to load")
+parser.add_argument(
+    "--external_asset_path",
+    type=str,
+    default=None,
+    help="Path to external assets when loading an externally located robot",
+)
+parser.add_argument(
+    "--external_robot_configs_path",
+    type=str,
+    default=None,
+    help="Path to external robot config when loading an external robot",
+)
+
+parser.add_argument(
+    "--visualize_spheres",
+    action="store_true",
+    help="When True, visualizes robot spheres",
+    default=False,
+)
+parser.add_argument(
+    "--reactive",
+    action="store_true",
+    help="When True, runs in reactive mode",
+    default=False,
+)
+
+parser.add_argument(
+    "--constrain_grasp_approach",
+    action="store_true",
+    help="When True, approaches grasp with fixed orientation and motion only along z axis.",
+    default=False,
+)
+
+parser.add_argument(
+    "--reach_partial_pose",
+    nargs=6,
+    metavar=("qx", "qy", "qz", "x", "y", "z"),
+    help="Reach partial pose",
+    type=float,
+    default=None,
+)
+parser.add_argument(
+    "--hold_partial_pose",
+    nargs=6,
+    metavar=("qx", "qy", "qz", "x", "y", "z"),
+    help="Hold partial pose while moving to goal",
+    type=float,
+    default=None,
+)
+
+
+args = parser.parse_args()
+
+############################################################
+
+# Third Party
 from omni.isaac.kit import SimulationApp
+
+simulation_app = SimulationApp(
+    {
+        "headless": args.headless_mode is not None,
+        "width": "1920",
+        "height": "1080",
+    }
+)
+# Standard Library
+from typing import Dict
+
+# Third Party
+import carb
+import numpy as np
+from helper import add_extensions, add_robot_to_scene
 from omni.isaac.core import World
 from omni.isaac.core.objects import cuboid, sphere
+
+########### OV #################
 from omni.isaac.core.utils.types import ArticulationAction
-import numpy as np
-from curobo.types.state import JointState
+
+# CuRobo
+# from curobo.wrap.reacher.ik_solver import IKSolver, IKSolverConfig
+from curobo.geom.sdf.world import CollisionCheckerType
+from curobo.geom.types import WorldConfig
+from curobo.types.base import TensorDeviceType
 from curobo.types.math import Pose
+from curobo.types.robot import JointState
+from curobo.types.state import JointState
+from curobo.util.logger import log_error, setup_curobo_logger
 from curobo.util.usd_helper import UsdHelper
 from curobo.util_file import (
+    get_assets_path,
+    get_filename,
+    get_path_of_dir,
     get_robot_configs_path,
-    load_yaml,
+    get_world_configs_path,
     join_path,
+    load_yaml,
 )
-from curobo.geom.sdf.world import CollisionCheckerType
-from curobo.types.robot import JointState
 from curobo.wrap.reacher.motion_gen import (
     MotionGen,
     MotionGenConfig,
@@ -27,106 +130,27 @@ from curobo.wrap.reacher.motion_gen import (
     PoseCostMetric,
 )
 
-def convert_to_json(obj):
-    if isinstance(obj, ArticulationAction):
-        return {
-            'position': obj.joint_positions.tolist(),
-            'velocity': obj.joint_velocities.tolist(),
-            'joint_indices': obj.joint_indices
-        }
-    else:
-        raise TypeError(f'Object of type {obj.__class__.__name__} is not JSON serializable')
+############################################################
 
-class JointVelocityPublisher(Node):
-    def __init__(self):
-        super().__init__('joint_velocity_publisher')
-        self.publisher_ = self.create_publisher(String, 'joint_velocities', 10)
-        self.get_logger().info("Joint velocity publisher node has been started.")
 
-    def publish_velocities(self, art_action):
-        data_curobo = json.dumps(art_action, default=convert_to_json, indent=4)
-        msg = String()
-        msg.data = data_curobo
-        self.publisher_.publish(msg)
-        self.get_logger().info(f"Published velocities: {data_curobo}")
+########### OV #################;;;;;
+
 
 def main():
-    rclpy.init()
-    ros_node = JointVelocityPublisher()
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--headless_mode",
-        type=str,
-        default=None,
-        help="To run headless, use one of [native, websocket], webrtc might not work.",
-    )
-    parser.add_argument("--robot", type=str, default="franka.yml", help="robot configuration to load")
-    parser.add_argument(
-        "--external_asset_path",
-        type=str,
-        default=None,
-        help="Path to external assets when loading an externally located robot",
-    )
-    parser.add_argument(
-        "--external_robot_configs_path",
-        type=str,
-        default=None,
-        help="Path to external robot config when loading an external robot",
-    )
-    parser.add_argument(
-        "--visualize_spheres",
-        action="store_true",
-        help="When True, visualizes robot spheres",
-        default=False,
-    )
-    parser.add_argument(
-        "--reactive",
-        action="store_true",
-        help="When True, runs in reactive mode",
-        default=False,
-    )
-    parser.add_argument(
-        "--constrain_grasp_approach",
-        action="store_true",
-        help="When True, approaches grasp with fixed orientation and motion only along z axis.",
-        default=False,
-    )
-    parser.add_argument(
-        "--reach_partial_pose",
-        nargs=6,
-        metavar=("qx", "qy", "qz", "x", "y", "z"),
-        help="Reach partial pose",
-        type=float,
-        default=None,
-    )
-    parser.add_argument(
-        "--hold_partial_pose",
-        nargs=6,
-        metavar=("qx", "qy", "qz", "x", "y", "z"),
-        help="Hold partial pose while moving to goal",
-        type=float,
-        default=None,
-    )
-
-    args = parser.parse_args()
-
-    simulation_app = SimulationApp(
-        {
-            "headless": args.headless_mode is not None,
-            "width": "1920",
-            "height": "1080",
-        }
-    )
-
+    # create a curobo motion gen instance:
     num_targets = 0
+    # assuming obstacles are in objects_path:
     my_world = World(stage_units_in_meters=1.0)
     stage = my_world.stage
 
     xform = stage.DefinePrim("/World", "Xform")
     stage.SetDefaultPrim(xform)
     stage.DefinePrim("/curobo", "Xform")
+    # my_world.stage.SetDefaultPrim(my_world.stage.GetPrimAtPath("/World"))
+    stage = my_world.stage
+    # stage.SetDefaultPrim(stage.GetPrimAtPath("/World"))
 
+    # Make a target to follow
     target = cuboid.VisualCuboid(
         "/World/target",
         position=np.array([0.5, 0, 0.5]),
@@ -135,10 +159,12 @@ def main():
         size=0.05,
     )
 
+    setup_curobo_logger("warn")
     past_pose = None
     n_obstacle_cuboids = 30
     n_obstacle_mesh = 100
 
+    # warmup curobo instance
     usd_help = UsdHelper()
     target_pose = None
 
@@ -204,6 +230,8 @@ def main():
 
     print("Curobo is Ready")
 
+    add_extensions(simulation_app, args.headless_mode)
+
     plan_config = MotionGenPlanConfig(
         enable_graph=False,
         enable_graph_attempt=2,
@@ -217,23 +245,27 @@ def main():
 
     cmd_plan = None
     cmd_idx = 0
-    my_world.scene.add_default_ground_plane()
+    # my_world.scene.add_default_ground_plane()
     i = 0
     spheres = None
     past_cmd = None
     target_orientation = None
     past_orientation = None
     pose_metric = None
-    while simulation_app.is_running():
-        my_world.step(render=True)
-        if not my_world.is_playing():
-            if i % 100 == 0:
-                print("**** Click Play to start simulation *****")
-            i += 1
-            continue
+    while True:
+        my_world.step(render=False)
+        # if not my_world.is_playing():
+        #     if i % 100 == 0:
+        #         print("**** Click Play to start simulation *****")
+        #     i += 1
+        #     # if step_index == 0:
+        #     #    my_world.play()
+        #     continue
 
         step_index = my_world.current_time_step_index
+        # print(step_index)
         if articulation_controller is None:
+            # robot.initialize()
             articulation_controller = robot.get_articulation_controller()
         if step_index < 2:
             my_world.reset()
@@ -250,19 +282,21 @@ def main():
         if step_index == 50 or step_index % 1000 == 0.0:
             print("Updating world, reading w.r.t.", robot_prim_path)
             obstacles = usd_help.get_obstacles_from_stage(
+                # only_paths=[obstacles_path],
                 reference_prim_path=robot_prim_path,
                 ignore_substring=[
                     robot_prim_path,
                     "/World/target",
                     "/World/defaultGroundPlane",
                     "/curobo",
-                ],
-            ).get_collision_check_world()
+]).get_collision_check_world()
             print(len(obstacles.objects))
 
             motion_gen.update_world(obstacles)
             print("Updated World")
+            carb.log_info("Synced CuRobo world from stage.")
 
+        # position and orientation of target virtual cube:
         cube_position, cube_orientation = target.get_world_pose()
 
         if past_pose is None:
@@ -280,7 +314,7 @@ def main():
             log_error("isaac sim has returned NAN joint position values.")
         cu_js = JointState(
             position=tensor_args.to_device(sim_js.positions),
-            velocity=tensor_args.to_device(sim_js.velocities),
+            velocity=tensor_args.to_device(sim_js.velocities),  # * 0.0,
             acceleration=tensor_args.to_device(sim_js.velocities) * 0.0,
             jerk=tensor_args.to_device(sim_js.velocities) * 0.0,
             joint_names=sim_js_names,
@@ -296,24 +330,26 @@ def main():
             cu_js.acceleration[:] = past_cmd.acceleration
         cu_js = cu_js.get_ordered_joint_state(motion_gen.kinematics.joint_names)
 
-        if args.visualize_spheres and step_index % 2 == 0:
-            sph_list = motion_gen.kinematics.get_robot_as_spheres(cu_js.position)
+        # if args.visualize_spheres and step_index % 2 == 0:
+        #     sph_list = motion_gen.kinematics.get_robot_as_spheres(cu_js.position)
 
-            if spheres is None:
-                spheres = []
-                for si, s in enumerate(sph_list[0]):
-                    sp = sphere.VisualSphere(
-                        prim_path="/curobo/robot_sphere_" + str(si),
-                        position=np.ravel(s.position),
-                        radius=float(s.radius),
-                        color=np.array([0, 0.8, 0.2]),
-                    )
-                    spheres.append(sp)
-            else:
-                for si, s in enumerate(sph_list[0]):
-                    if not np.isnan(s.position[0]):
-                        spheres[si].set_world_pose(position=np.ravel(s.position))
-                        spheres[si].set_radius(float(s.radius))
+        #     if spheres is None:
+        #         spheres = []
+        #         # create spheres:
+
+        #         for si, s in enumerate(sph_list[0]):
+        #             sp = sphere.VisualSphere(
+        #                 prim_path="/curobo/robot_sphere_" + str(si),
+        #                 position=np.ravel(s.position),
+        #                 radius=float(s.radius),
+        #                 color=np.array([0, 0.8, 0.2]),
+        #             )
+        #             spheres.append(sp)
+        #     else:
+        #         for si, s in enumerate(sph_list[0]):
+        #             if not np.isnan(s.position[0]):
+        #                 spheres[si].set_world_pose(position=np.ravel(s.position))
+        #                 spheres[si].set_radius(float(s.radius))
 
         robot_static = False
         if (np.max(np.abs(sim_js.velocities)) < 0.2) or args.reactive:
@@ -327,17 +363,20 @@ def main():
             and np.linalg.norm(past_orientation - cube_orientation) == 0.0
             and robot_static
         ):
+            # Set EE teleop goals, use cube for simple non-vr init:
             ee_translation_goal = cube_position
             ee_orientation_teleop_goal = cube_orientation
 
+            # compute curobo solution:
             ik_goal = Pose(
                 position=tensor_args.to_device(ee_translation_goal),
                 quaternion=tensor_args.to_device(ee_orientation_teleop_goal),
             )
             plan_config.pose_cost_metric = pose_metric
             result = motion_gen.plan_single(cu_js.unsqueeze(0), ik_goal, plan_config)
+            # ik_result = ik_solver.solve_single(ik_goal, cu_js.position.view(1,-1), cu_js.position.view(1,1,-1))
 
-            succ = result.success.item()
+            succ = result.success.item()  # ik_result.success.item()
             if num_targets == 1:
                 if args.constrain_grasp_approach:
                     pose_metric = PoseCostMetric.create_grasp_approach_metric()
@@ -353,19 +392,21 @@ def main():
                 num_targets += 1
                 cmd_plan = result.get_interpolated_plan()
                 cmd_plan = motion_gen.get_full_js(cmd_plan)
+                # get only joint names that are in both:
                 idx_list = []
                 common_js_names = []
                 for x in sim_js_names:
                     if x in cmd_plan.joint_names:
                         idx_list.append(robot.get_dof_index(x))
                         common_js_names.append(x)
+                # idx_list = [robot.get_dof_index(x) for x in sim_js_names]
 
                 cmd_plan = cmd_plan.get_ordered_joint_state(common_js_names)
 
                 cmd_idx = 0
 
             else:
-                print("Plan did not converge to a solution. No action is being taken.")
+                carb.log_warn("Plan did not converge to a solution.  No action is being taken.")
             target_pose = cube_position
             target_orientation = cube_orientation
         past_pose = cube_position
@@ -373,25 +414,29 @@ def main():
         if cmd_plan is not None:
             cmd_state = cmd_plan[cmd_idx]
             past_cmd = cmd_state.clone()
+            # get full dof state
             art_action = ArticulationAction(
                 cmd_state.position.cpu().numpy(),
                 cmd_state.velocity.cpu().numpy(),
                 joint_indices=idx_list,
             )
 
-            ros_node.publish_velocities(art_action)
 
+
+            print(f'les vitesses : {art_action.joint_velocities}')
+
+                
+            # set desired joint angles obtained from IK:
             articulation_controller.apply_action(art_action)
             cmd_idx += 1
-            for _ in range(2):
-                my_world.step(render=False)
+            # for _ in range(2):
+            #     my_world.step(render=False)
             if cmd_idx >= len(cmd_plan.position):
                 cmd_idx = 0
                 cmd_plan = None
                 past_cmd = None
+    # simulation_app.close()
 
-    simulation_app.close()
-    rclpy.shutdown()
 
 if __name__ == "__main__":
     main()

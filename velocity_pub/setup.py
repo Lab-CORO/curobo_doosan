@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "joint_velocity_publisher = velocity_pub.velocity_pub:main"
+            "mgr_vel_pub = velocity_pub.mgr_velocity_pub:main",
+            "mpc_vel_pub = velocity_pub.mpc_velocity_pub:main"
         ],
     },
 )

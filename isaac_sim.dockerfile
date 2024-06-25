@@ -43,6 +43,9 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 #    rm -rf /var/lib/apt/lists/*
 
 # Set timezone info
+
+
+
 RUN apt-get update && apt-get install -y \
   tzdata \
   software-properties-common \
@@ -68,13 +71,14 @@ RUN apt-get update && apt-get install -y \
   python3-pip \
   python3-ipdb \
   python3-tk \
-  python3-wstool \
   sudo git bash unattended-upgrades \
   apt-utils \
   terminator \
   && rm -rf /var/lib/apt/lists/*
 
-
+# Ajouter les sources ROS2 Foxy
+RUN curl -sSL http://packages.ros.org/ros.key | apt-key add -
+RUN sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 # https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cudagl
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -85,6 +89,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libsm6 \
     libxi6 \
     libxrandr2 \
+    ros-foxy-desktop \
+    python3-rosdep \
+    python3-rosinstall \
+    python3-colcon-common-extensions \
+    python3-vcstool \
+    python3-wstool \
     libxt6 \
     libfreetype-dev \
     libfontconfig1 \
@@ -176,7 +186,8 @@ RUN mkdir /pkgs && cd /pkgs && git clone https://github.com/NVlabs/curobo.git &&
 RUN $omni_python -m pip install ninja wheel tomli
 
 
-RUN cd /pkgs/curobo && $omni_python -m pip install .[dev] --no-build-isolation
+RUN cd /pkgs/curobo && $omni_python -m pip install -e . --no-build-isolation
+
 
 WORKDIR /pkgs/curobo
 
@@ -252,6 +263,8 @@ RUN cd /pkgs && git clone https://github.com/nvlabs/nvblox_torch.git && \
 # install realsense for nvblox demos:
 RUN $omni_python -m pip install pyrealsense2 opencv-python transforms3d
 
+
+
 RUN $omni_python -m pip install "robometrics[evaluator] @ git+https://github.com/fishbotics/robometrics.git"
 
 RUN cd /pkgs && git clone https://github.com/Lab-CORO/curobo_doosan.git
@@ -284,7 +297,6 @@ RUN apt-get update && apt-get install -y librealsense2-dkms \
     librealsense2-dev\
     librealsense2-dbg
 
-COPY motion_gen_reacher.py /pkgs/curobo/examples/isaac_sim/motion_gen_reacher.py
 
 # Download PyCharm Community Edition9
 
@@ -294,3 +306,63 @@ RUN cd /pkgs && git clone https://github.com/BryanStuurman/doosan-robot.git
 #Télécharger et installer PyCharm Community Edition
 
 RUN wget -O /tmp/pycharm-community.tar.gz https://download.jetbrains.com/python/pycharm-community-2023.1.3.tar.gz && tar -xzf /tmp/pycharm-community.tar.gz -C /opt && rm /tmp/pycharm-community.tar.gz
+
+# Mettre à jour les packages et installer les dépendances nécessaires
+RUN apt-get update && apt-get install -y \
+    locales \
+    curl \
+    gnupg2 \
+    lsb-release \
+    build-essential
+
+# Configurer les locales
+RUN locale-gen en_US en_US.UTF-8
+RUN update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+ENV LANG en_US.UTF-8
+
+# Ajouter les sources ROS2 Foxy
+RUN curl -sSL http://packages.ros.org/ros.key | apt-key add -
+RUN sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+
+# Mettre à jour les packages après l'ajout des sources ROS2
+RUN apt-get update
+
+# Installer ROS2 Foxy et les outils de base
+RUN apt-get install -y \
+    ros-foxy-desktop \
+    python3-rosdep \
+    python3-rosinstall \
+    python3-colcon-common-extensions \
+    python3-vcstool
+
+# Initialiser rosdep
+RUN rosdep init
+RUN rosdep update
+
+# Source ROS2 Foxy setup bash
+RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+
+# Création de l'espace de travail ROS2
+RUN mkdir -p /ros2_ws/src
+
+
+COPY velocity_pub /ros2_ws/src
+# Entrypoint
+
+
+COPY motion_gen_reacher_HL.py /pkgs/curobo/examples/isaac_sim/
+COPY MPC_HL.py /pkgs/curobo/examples/isaac_sim/
+
+# Copier un fichier `example_package` dans l'espace de travail
+COPY velocity_pub /pkgs/curobo/
+
+RUN cd /ros2_ws/src && git clone https://github.com/NVlabs/curobo.git
+
+# Construire l'espace de travail
+RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && cd /ros2_ws && colcon build"
+
+# Source l'installation de ROS2 et l'espace de travail
+RUN echo "source /ros2_ws/install/setup.bash" >> /etc/bash.bashrc
+
+# Utiliser bash pour les commandes RUN suivantes
+SHELL ["/bin/bash", "-c"]
