@@ -1,0 +1,10 @@
+broker:
+  host: localhost
+  port: 1883
+bridge:
+  ros2mqtt:
+    - ros_topic: /dsr_joint_velocity_controller/command
+      mqtt_topic: Velocity
+  mqtt2ros:
+    - mqtt_topic: Velocity
+      ros_topic: /string_topic

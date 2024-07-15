@@ -26,7 +26,12 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     ros-noetic-interactive-marker-twist-server \
     ros-noetic-moveit-ros-visualization \
     ros-noetic-lms1xx \
+    cmake \
+    ros-noetic-mqtt-client \
     ros-noetic-twist-mux \
+    ros-noetic-rosbridge-server \
+    mosquitto \
+    mosquitto-clients \
     ros-noetic-imu-tools \
     ros-noetic-moveit-servo \
     ros-noetic-robot-localization \
@@ -36,6 +41,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     ros-noetic-velocity-controllers \
     ros-noetic-effort-controllers \
     ros-noetic-ros-control \
+    rapidjson-dev \
+    ros-noetic-mqtt-client \
     ros-noetic-ros-controllers \
     ros-noetic-moveit-fake-controller-manager \
     liborocos-kdl-dev \
@@ -49,6 +56,15 @@ RUN apt-get update && apt-get remove --purge -y ros-noetic-moveit ros-noetic-rvi
 RUN wget https://download.jetbrains.com/python/pycharm-community-2021.3.3.tar.gz \
     && tar -xzf pycharm-community-2021.3.3.tar.gz -C /opt/ \
     && rm pycharm-community-2021.3.3.tar.gz
+
+    # Téléchargement et installation de CMake 3.20 ou plus récent
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.20.0/cmake-3.20.0-Linux-x86_64.sh \
+&& chmod +x cmake-3.20.0-Linux-x86_64.sh \
+&& ./cmake-3.20.0-Linux-x86_64.sh --skip-license --prefix=/usr/local \
+&& rm cmake-3.20.0-Linux-x86_64.sh
+
+# Ajout du répertoire CMake à PATH (optionnel si déjà dans /usr/local)
+ENV PATH="/usr/local/bin:${PATH}"
 
 ENV PYCHARM_HOME /opt/pycharm-community-2021.3.3
 ENV PATH $PYCHARM_HOME/bin:$PATH
@@ -66,6 +82,10 @@ RUN mkdir -p /home/catkin_ws/src \
     && git clone https://github.com/wjwwood/serial.git \ 
     && git clone https://github.com/ETS-J-Boutin/doosan-robot_RT.git \
     && git clone https://github.com/LuCarpentier92/ros_doosan.git
+    # && git clone https://github.com/ahmad-ra/mqtt_client.git \ 
+    # # && git clone https://github.com/facontidavide/rosx_introspection.git 
+    # && git clone https://github.com/LuCarpentier92/rosx_introspection.git
+    
 
 RUN source /opt/ros/noetic/setup.bash && cd /home/catkin_ws && rosdep install --from-paths src --ignore-src --rosdistro noetic -r -y
 
@@ -81,11 +101,6 @@ RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | apt-key add 
 RUN add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 
 RUN apt-get update && apt-get install -y code
-
-RUN echo "alias code='code --no-sandbox --user-data-dir=/root/.vscode-root'" >> /root/.bashrc
-
-RUN cd /home/catkin_ws && sudo apt update && sudo apt install iputils-ping && sudo apt install net-tools
-
 WORKDIR /home/catkin_ws/src
 
 RUN catkin_create_pkg interactive_marker rospy std_msgs sensor_msgs geometry_msgs interactive_markers 
@@ -102,12 +117,54 @@ COPY launch_robot.sh /home/catkin_ws/script
 
 RUN chmod +x /home/catkin_ws/script/launch_robot.sh
 
-RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
-    cd /home/catkin_ws && \
-    catkin_make"
+RUN pip install paho-mqtt==1.5.1
 
-RUN echo "source /home/catkin_ws/devel/setup.bash" >> /root/.bashrc
+# COPY rosx_introspection /home/catkin_ws/src/rosx_introspection
+
+
+
+# RUN cd /home/catkin_ws/src/rosx_introspection && mkdir build
+
+# RUN cd /home/catkin_ws/src/rosx_introspection/build && cmake ..
+
+
+RUN cd /home/catkin_ws && mkdir config 
+
+COPY config.yml /home/catkin_ws/config
+
+
+COPY mqtt_pub.py /home/catkin_ws/script
+
+COPY ros_pub.py /home/catkin_ws/script
+
+RUN chmod +x /home/catkin_ws/script/mqtt_pub.py && chmod +x /home/catkin_ws/script/ros_pub.py
+
+# RUN cd /home/catkin_ws/src && git clone https://github.com/ahmad-ra/rosx_introspection.git
 
 WORKDIR /home/catkin_ws/
 
-CMD ["bash"]
+# RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
+#     cd /home/catkin_ws && \
+#     catkin_make"
+
+
+RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+
+
+WORKDIR /home/catkin_ws/src
+
+# Créer le package ROS
+RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
+    catkin_create_pkg string_to_float64_multiarray std_msgs roscpp"
+
+# Copier le code source
+COPY string_to_float64_multiarray.cpp /home/catkin_ws/src/string_to_float64_multiarray/src/
+
+# Construire l'espace de travail
+WORKDIR /home/catkin_ws
+RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
+    catkin_make"
+
+# Définir l'entrée du conteneur
+ENTRYPOINT ["/ros_entrypoint.sh"]
+CMD ["rosrun", "string_to_float64_multiarray", "string_to_float64_multiarray_node"]
