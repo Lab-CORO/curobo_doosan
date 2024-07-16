@@ -160,11 +160,19 @@ RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
 # Copier le code source
 COPY string_to_float64_multiarray.cpp /home/catkin_ws/src/string_to_float64_multiarray/src/
 
-# Construire l'espace de travail
-WORKDIR /home/catkin_ws
-RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
-    catkin_make"
+COPY measure_latency.cpp /home/catkin_ws/src/string_to_float64_multiarray/src/
 
-# Définir l'entrée du conteneur
-ENTRYPOINT ["/ros_entrypoint.sh"]
-CMD ["rosrun", "string_to_float64_multiarray", "string_to_float64_multiarray_node"]
+# Copier le CMakeLists.txt
+COPY CMakeLists.txt /home/catkin_ws/src/string_to_float64_multiarray
+
+RUN cd /home/catkin_ws && \
+    /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make"
+
+
+# Ajouter la commande source au .bashrc
+RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc && \
+    echo "source /home/catkin_ws/devel/setup.bash" >> /root/.bashrc
+    
+    
+CMD ["/bin/bash"]
+

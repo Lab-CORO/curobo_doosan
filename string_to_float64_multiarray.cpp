@@ -26,7 +26,14 @@ public:
 
         std_msgs::Float64MultiArray float_msg;
         float_msg.data = float_array;
+
+        // Ajouter l'horodatage de réception dans le message Float64MultiArray
+        ros::Time current_time = ros::Time::now();
+        ROS_INFO("Message received at: %f", current_time.toSec());
+        float_msg.layout.data_offset = current_time.toSec();
+
         pub_.publish(float_msg);
+        ROS_INFO("Message published with timestamp: %f", current_time.toSec());
     }
 
 private:
