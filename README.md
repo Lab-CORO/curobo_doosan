@@ -1,14 +1,12 @@
-<!--
-Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# Instructions pour l'utilisation des scripts Docker
 
-NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
-property and proprietary rights in and to this material, related
-documentation and any modifications thereto. Any use, reproduction,
-disclosure or distribution of this material and related documentation
-without an express license agreement from NVIDIA CORPORATION or
-its affiliates is strictly prohibited.
--->
-# Docker Instructions
-
-Check [Docker Development](https://curobo.org/source/getting_started/5_docker_development.html) for
-instructions.
+## Étape 1 : Construire le conteneur Docker
+Pour construire le conteneur Docker avec la configuration Isaac, exécutez la commande suivante :
+```bash
+bash build_docker.sh isaac
+```
+## Étape 2 : Démarrer le conteneur Docker
+Pour démarrer le conteneur Docker avec la configuration Isaac, exécutez la commande suivante :
+```bash
+bash start_docker.sh isaac
+```
