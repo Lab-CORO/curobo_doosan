@@ -1,8 +1,16 @@
 # cuRobo
+import paho.mqtt.client as mqtt
+from random import randrange, uniform
+import time
 import torch
 from curobo.types.math import Pose
 from curobo.types.robot import JointState
 from curobo.wrap.reacher.motion_gen import MotionGen, MotionGenConfig, MotionGenPlanConfig
+import json
+
+
+client = mqtt.Client()
+client.connect("localhost",1883,60)
 
 world_config = {
     "mesh": {
@@ -20,7 +28,7 @@ world_config = {
 }
 
 motion_gen_config = MotionGenConfig.load_from_robot_config(
-    "/home/coro/ros2_ws/src/curobo_doosan/src/m1013/m1013.yml",
+    "/pkgs/curobo_doosan/src/m1013/m1013.yml",
     world_config,
     interpolation_dt=0.01,
 )
@@ -41,4 +49,14 @@ start_state = JointState.from_position(
 
 result = motion_gen.plan_single(start_state, goal_pose, MotionGenPlanConfig(max_attempts=1))
 traj = result.get_interpolated_plan()  # result.optimized_dt has the dt between timesteps
-print(f"Trajectory Generated: {traj} ")
+
+traj_data = {
+    "velocity": traj.velocity.tolist()
+}
+
+traj_json = json.dumps(traj_data)
+# print(f"Trajectory Generated: {traj} ")
+client.publish("Velocity", traj_json)
+print("Just published " + str(traj_json) + " to Topic Velocity")
+time.sleep(10)
+client.disconnect()

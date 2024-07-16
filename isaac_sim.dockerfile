@@ -9,29 +9,32 @@
 ## its affiliates is strictly prohibited.
 ##
 ARG DEBIAN_FRONTEND=noninteractive
+# apt-get ne demandera pas d interaction avec le user   
 ARG BASE_DIST=ubuntu20.04
+# distribution utilisee pour construire l'image
 ARG CUDA_VERSION=11.4.2
+# version de CUDA dans le docker
 ARG ISAAC_SIM_VERSION=2022.2.1
-
+# version de isaac sim ? bizarre car on installe le 2023.1.0
 
 FROM nvcr.io/nvidia/isaac-sim:${ISAAC_SIM_VERSION} AS isaac-sim
-
+# etape de build intermediaire
 FROM nvcr.io/nvidia/cudagl:${CUDA_VERSION}-devel-${BASE_DIST}
-
+# image de base finale pour ce docker
 
 # this does not work for 2022.2.1
 #$FROM nvcr.io/nvidia/cuda:${CUDA_VERSION}-cudnn8-devel-${BASE_DIST} 
 
-LABEL maintainer "User Name"
+LABEL maintainer "Lucas Carpentier"
 
 ARG VULKAN_SDK_VERSION=1.3.224.1
+# version du sdk vulkan a utiliser
 
-
-
-# Deal with getting tons of debconf messages
+# Deal with getting tons of debconf messages    
 # See: https://github.com/phusion/baseimage-docker/issues/58
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-
+# configure debconf pour qu il utilise une interface non interactive, debconf sert a
+# gerer les interactions utilisateurs
 
 # add GL if using a cuda docker instead of cudagl:
 #RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -46,7 +49,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 
 
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \  
   tzdata \
   software-properties-common \
   && rm -rf /var/lib/apt/lists/* \
@@ -68,6 +71,7 @@ RUN apt-get update && apt-get install -y \
   openssh-client \
   libeigen3-dev \
   libssl-dev \
+  mosquitto \
   python3-pip \
   python3-ipdb \
   python3-tk \
@@ -130,7 +134,7 @@ RUN wget -q --show-progress \
 
 # Setup the required capabilities for the container runtime    
 ENV NVIDIA_VISIBLE_DEVICES=all NVIDIA_DRIVER_CAPABILITIES=all
-
+#variable d environnement
 # Open ports for live streaming
 EXPOSE 47995-48012/udp \
        47995-48012/tcp \
@@ -147,7 +151,9 @@ ENV OMNI_SERVER http://omniverse-content-production.s3-us-west-2.amazonaws.com/A
 # ENV OMNI_SERVER omniverse://localhost/NVIDIA/Assets/Isaac/2022.1
 # ENV OMNI_USER admin
 # ENV OMNI_PASS admin
+
 ENV MIN_DRIVER_VERSION 525.60.11
+# defini le driver le plus ancien utilisable
 
 # Copy Isaac Sim files
 COPY --from=isaac-sim /isaac-sim /isaac-sim
@@ -155,26 +161,28 @@ RUN mkdir -p /root/.nvidia-omniverse/config
 COPY --from=isaac-sim /root/.nvidia-omniverse/config /root/.nvidia-omniverse/config
 COPY --from=isaac-sim /etc/vulkan/icd.d/nvidia_icd.json /etc/vulkan/icd.d/nvidia_icd.json
 COPY --from=isaac-sim /etc/vulkan/icd.d/nvidia_icd.json /etc/vulkan/implicit_layer.d/nvidia_layers.json
-
+# copie des elements de l image isaac sim vers notre image
 WORKDIR /isaac-sim
 
 
 ENV TORCH_CUDA_ARCH_LIST="7.0+PTX"
+# defini les versions de CUDA que pyTorch peut executer
 
 
 
 
 # create an alias for omniverse python
 ENV omni_python='/isaac-sim/python.sh'
-
+# variable d environnement menant au chemin specifie
 RUN echo "alias omni_python='/isaac-sim/python.sh'" >> /.bashrc
-
+# ecriture dans le bashrc
 
 # Add cache date to avoid using cached layers older than this
 ARG CACHE_DATE=2024-04-11
 
 RUN $omni_python -m pip install "robometrics[evaluator] @ git+https://github.com/fishbotics/robometrics.git"
 
+# RUN /usr/bin/python3 -m pip install "robometrics[evaluator] @ git+https://github.com/fishbotics/robometrics.git"
 # if you want to use a different version of curobo, create folder as docker/pkgs and put your
 # version of curobo there. Then uncomment below line and comment the next line that clones from 
 # github
@@ -183,10 +191,28 @@ RUN $omni_python -m pip install "robometrics[evaluator] @ git+https://github.com
 
 RUN mkdir /pkgs && cd /pkgs && git clone https://github.com/NVlabs/curobo.git && cd curobo && git checkout v0.7.2
 
-RUN $omni_python -m pip install ninja wheel tomli
+RUN $omni_python -m pip install ninja wheel tomli roslibpy
+
+# RUN /usr/bin/python3 -m pip install ninja wheel tomli
 
 
+
+
+
+########################## MODIFFFFFF ############################################
 RUN cd /pkgs/curobo && $omni_python -m pip install -e . --no-build-isolation
+## installe tous les packages presents dans le repertoire courant a savoir /pkgs/curobo dans omni_python
+# RUN pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+# RUN mkdir /ros2_ws && cd /ros2_ws && git clone https://github.com/NVlabs/curobo.git && cd curobo && git checkout v0.7.2
+
+
+# RUN pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+# RUN cd /ros2_ws/curobo && /usr/bin/python3 -m pip install -e . --no-build-isolation
+
+
+
+########################## MODIFFFFFF ############################################
 
 
 WORKDIR /pkgs/curobo
@@ -351,12 +377,15 @@ COPY velocity_pub /ros2_ws/src
 
 
 COPY motion_gen_reacher_HL.py /pkgs/curobo/examples/isaac_sim/
+
+COPY motion_gen_roslibpy.py /pkgs/curobo/examples/isaac_sim/
+
 COPY MPC_HL.py /pkgs/curobo/examples/isaac_sim/
 
 # Copier un fichier `example_package` dans l'espace de travail
 COPY velocity_pub /pkgs/curobo/
 
-RUN cd /ros2_ws/src && git clone https://github.com/NVlabs/curobo.git
+# RUN cd /ros2_ws/src && git clone https://github.com/NVlabs/curobo.git
 
 # Construire l'espace de travail
 RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && cd /ros2_ws && colcon build"
@@ -364,5 +393,17 @@ RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && cd /ros2_ws && colcon build
 # Source l'installation de ROS2 et l'espace de travail
 RUN echo "source /ros2_ws/install/setup.bash" >> /etc/bash.bashrc
 
+
+
+RUN $omni_python -m pip install paho-mqtt==1.5.1
 # Utiliser bash pour les commandes RUN suivantes
+
+
+RUN sudo apt-get update && sudo apt-get install -y --fix-missing python3-venv
+
+
+RUN python3 -m venv vel_pub_env
+
+
+
 SHELL ["/bin/bash", "-c"]

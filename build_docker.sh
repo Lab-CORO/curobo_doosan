@@ -37,10 +37,10 @@ if [ "$input_arg" == "isaac_sim_2022.2.1" ]; then
     dockerfile="isaac_sim.dockerfile"
     image_tag="isaac_sim_2022.2.1"
     isaac_sim_version="2022.2.1"
-elif [ "$input_arg" == "isaac_sim_2023.1.0" ]; then
+elif [ "$input_arg" == "isaac" ]; then
     echo "Building Isaac Sim headless docker"
     dockerfile="isaac_sim.dockerfile"
-    image_tag="isaac_sim_2023.1.0"
+    image_tag="isaac"
     isaac_sim_version="2023.1.0"
 elif [ "$input_arg" == "x86" ]; then
     echo "Building for X86 Architecture"

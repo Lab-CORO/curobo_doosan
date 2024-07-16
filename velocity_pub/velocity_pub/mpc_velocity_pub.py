@@ -26,7 +26,7 @@ class MyNode(Node):
             }
         
         mpc_config = MpcSolverConfig.load_from_robot_config(
-                "ur5e.yml",
+                "/pkgs/curobo_doosan/src/m1013/m1013.yml",
                 world_config,
                 store_rollouts=True,
                 step_dt=0.03,
@@ -34,6 +34,7 @@ class MyNode(Node):
         
         self.mpc = MpcSolver(mpc_config)
         self.mpc.warmup()
+        # self.mpc.joint_names = ['joint1', 'joint2', 'joint3', 'joint4', 'joint5','joint6']
 
         retract_cfg = self.mpc.rollout_fn.dynamics_model.retract_config.clone().unsqueeze(0)
 

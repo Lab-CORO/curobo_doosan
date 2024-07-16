@@ -8,6 +8,7 @@ world_config = {
             "table": {"dims": [2, 2, 0.2], "pose": [0.4, 0.0, -0.1, 1, 0, 0, 0]},
             "cube_1": {"dims": [0.1, 0.1, 0.2], "pose": [0.4, 0.0, 0.5, 1, 0, 0, 0]},
         },
+        
         "mesh": {
             "scene": {
                 "pose": [1.5, 0.080, 1.6, 0.043, -0.471, 0.284, 0.834],
@@ -17,7 +18,7 @@ world_config = {
     }
 
 mpc_config = MpcSolverConfig.load_from_robot_config(
-        "ur5e.yml",
+        "/pkgs/curobo_doosan/src/m1013/m1013.yml",
         world_config,
         store_rollouts=True,
         step_dt=0.03,
@@ -36,6 +37,7 @@ goal_pose = kinematics_state.ee_pose.clone()
 
 # read start state from robot here:
 start_state = JointState.from_position(retract_cfg, joint_names=mpc.joint_names)
+print("succesfully loaded Doosan M1013")
 
 goal = Goal(
     current_state=start_state,
@@ -78,6 +80,7 @@ while True and i < 100: # control loop
     # send action to robot:
     command = result.action
     # your_robot_api.send_command(command)
+    
     print(result.metrics.pose_error.item())
     print(f"Consignes de vitesse : {command.velocity.tolist()}")
 

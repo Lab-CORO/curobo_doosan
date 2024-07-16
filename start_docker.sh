@@ -54,7 +54,8 @@ elif [ "$input_arg" == "aarch64" ]; then
     --volume /dev/input:/dev/input \
     curobo_docker:$input_arg
 
-elif [[ "$input_arg" == *isaac_sim* ]] ; then
+elif [[ "$input_arg" == "isaac" ]] ; then
+
 
     xhost +local:docker
 
