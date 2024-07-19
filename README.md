@@ -10,3 +10,13 @@ Pour démarrer le conteneur Docker avec la configuration Isaac, exécutez la com
 ```bash
 bash start_docker.sh isaac
 ```
+# Instructions pour lancer les scripts de curobo
+
+Pour exécuter les scripts de curobo, utilisez la commande suivante :
+
+```bash
+$omni_python /chemin/vers/le/script
+```
+
+Remplacez `/chemin/vers/le/script` par le chemin réel du script que vous souhaitez exécuter.
+
