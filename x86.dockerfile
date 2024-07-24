@@ -1,20 +1,7 @@
-##
-## Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-##
-## NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
-## property and proprietary rights in and to this material, related
-## documentation and any modifications thereto. Any use, reproduction,
-## disclosure or distribution of this material and related documentation
-## without an express license agreement from NVIDIA CORPORATION or
-## its affiliates is strictly prohibited.
-##
 FROM nvcr.io/nvidia/pytorch:23.08-py3 AS torch_cuda_base
 
 LABEL maintainer "Lucas Carpentier, Guillaume Dupoiron"
 
-
-# Deal with getting tons of debconf messages
-# See: https://github.com/phusion/baseimage-docker/issues/58
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 # add GL:
@@ -28,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
+
 
 # Set timezone info
 RUN apt-get update && apt-get install -y \
@@ -44,6 +32,7 @@ RUN apt-get update && apt-get install -y \
   wget \
   build-essential \
   cmake \
+  snapd \
   git \
   git-lfs \
   iputils-ping \
@@ -61,6 +50,18 @@ RUN apt-get update && apt-get install -y \
   terminator \
   glmark2 \
   && rm -rf /var/lib/apt/lists/*
+
+# Téléchargez le fichier tar.gz depuis le site de JetBrains
+RUN wget https://download.jetbrains.com/python/pycharm-community-2023.1.2.tar.gz
+
+# Décompressez le fichier
+RUN tar -xzf pycharm-community-2023.1.2.tar.gz
+
+# Déplacez le dossier décompressé
+RUN mv pycharm-community-2023.1.2 /opt/pycharm-community
+
+# Ajoutez un lien symbolique pour faciliter l'exécution
+RUN ln -s /opt/pycharm-community/bin/pycharm.sh /usr/local/bin/pycharm
 
 # push defaults to bashrc:
 RUN apt-get update && apt-get install --reinstall -y \
@@ -125,16 +126,14 @@ RUN cd /pkgs && git clone https://github.com/Lab-CORO/nvblox_torch.git && \
 
 #################################################
 # Cloner le dépôt OpenCV et les modules supplémentaires
+WORKDIR /pkgs
+
+RUN git clone https://github.com/Lab-CORO/curobo_doosan.git 
+
 RUN git clone https://github.com/opencv/opencv.git /pkgs/opencv
 
 WORKDIR /pkgs/opencv
-RUN mkdir -p build && cd build 
-
-WORKDIR /pkgs/opencv/build
-RUN cmake ..
-RUN make
-RUN make install
-
+RUN mkdir -p buildS
 
 RUN python -m pip install pyrealsense2 \
     opencv-python-headless \
@@ -143,7 +142,6 @@ RUN python -m pip install pyrealsense2 \
 # install benchmarks:
 RUN python -m pip install "robometrics[evaluator] @ git+https://github.com/fishbotics/robometrics.git"
 
-# update ucx path: https://github.com/openucx/ucc/issues/476
 RUN export LD_LIBRARY_PATH=/opt/hpcx/ucx/lib:$LD_LIBRARY_PATH
 
 RUN wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O /tmp/code_latest_amd64.deb && \
@@ -151,7 +149,7 @@ RUN wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x
 
 #alias for code:
 
-RUN echo "alias code='code --user-data-dir --no-sandbox'" >> /root/.bashrc
+RUN echo "alias code='code --user-data-dir=./vscode --no-sandbox'" >> /root/.bashrc
 RUN wget 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.25-1ubuntu2_amd64.deb' -O /tmp/libusb-1.0-0_1.0.25-1ubuntu2_amd64.deb && \
     dpkg -i /tmp/libusb-1.0-0_1.0.25-1ubuntu2_amd64.deb
     
@@ -165,3 +163,54 @@ RUN apt-get update && apt-get install -y librealsense2-dkms \
     librealsense2-utils\
     librealsense2-dev\
     librealsense2-dbg
+
+
+##### Installing ROS Humble ######
+
+# Définir des arguments pour désactiver les invites interactives pendant l'installation
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Ajouter les dépôts ROS 2
+RUN apt-get update && apt-get install -y \
+    lsb-release \
+    gnupg2 \
+    curl \
+    && curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt-key add - \
+    && sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list' \
+    && apt-get update
+
+# Installer des dépendances générales
+RUN apt-get update && apt-get install -y \
+    lsb-release \
+    gnupg2 \
+    curl \
+    python3-pip \
+    ros-humble-moveit \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Ajouter les sources de ROS 2 Humble
+RUN apt-get update && apt-get install -y software-properties-common
+RUN add-apt-repository universe
+RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add -
+RUN sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+
+# Mettre à jour et installer ROS 2 Humble
+RUN apt-get update && apt-get install -y \
+    ros-humble-desktop \
+    python3-argcomplete \
+    ros-humble-rviz2 \
+    python3-colcon-common-extensions \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY ros_packages/. /home/ros2_ws/src
+
+RUN /bin/bash -c "source /opt/ros/humble/setup.bash && cd /home/ros2_ws && colcon build"
+RUN echo "source /home/ros2_ws/install/setup.bash" >> ~/.bashrc
+
+
+RUN sudo apt-get update && sudo apt-get install --reinstall -y \
+    libmpich-dev \
+    hwloc-nox libmpich12 mpich
+
+WORKDIR /home/ros2_ws
