@@ -31,6 +31,9 @@ sudo apt-get update && sudo apt-get install --reinstall -y \
   hwloc-nox libmpich12 mpich
 ```
 
+
+
+
 ## Instructions pour lancer les scripts de curobo
 
 Pour exécuter les scripts de curobo, utilisez la commande suivante :
@@ -40,3 +43,15 @@ python /chemin/vers/le/script
 ```
 
 Remplacez `/chemin/vers/le/script` par le chemin réel du script que vous souhaitez exécuter.
+
+## Utilisation de curobo pour générer une trajectoire avec incorporation de la caméra
+
+Pour utiliser curobo et générer une trajectoire intégrant la caméra, veuillez suivre les étapes suivantes :
+
+1. Assurez-vous d'avoir complété l'étape 4.
+2. Accédez au répertoire `/home/ros2_ws`.
+3. Exécutez la commande suivante :
+
+```bash
+ros2 run trajectory_publisher trajectory_publisher_node
+```
