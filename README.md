@@ -53,5 +53,5 @@ Pour utiliser curobo et générer une trajectoire intégrant la caméra, veuille
 3. Exécutez la commande suivante :
 
 ```bash
-ros2 run trajectory_publisher trajectory_publisher_node
+ros2 run trajectory_publisher trajectory_pub_node
 ```
