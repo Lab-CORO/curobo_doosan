@@ -55,3 +55,7 @@ Pour utiliser curobo et générer une trajectoire intégrant la caméra, veuille
 ```bash
 ros2 run trajectory_publisher trajectory_pub_node
 ```
+
+# Recommandation de Driver NVIDIA
+
+Pour exécuter ce Docker de manière optimale, nous recommandons d'utiliser le driver NVIDIA version 545. 
