@@ -185,6 +185,8 @@ RUN apt-get update && apt-get install -y \
     gnupg2 \
     curl \
     python3-pip \
+    ros-humble-joint-state-publisher \
+    ros-humble-joint-state-publisher-gui \
     ros-humble-moveit \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
