@@ -132,8 +132,12 @@ RUN git clone https://github.com/Lab-CORO/curobo_doosan.git
 
 RUN git clone https://github.com/opencv/opencv.git /pkgs/opencv
 
+WORKDIR /home/ros2_ws/src
+
+RUN git clone https://github.com/Lab-CORO/CapacitiNet_msg.git src/CapacitiNet_msg && git clone https://github.com/Lab-CORO/curobo_ros.git
+
 WORKDIR /pkgs/opencv
-RUN mkdir -p buildS
+RUN mkdir -p build
 
 RUN python -m pip install pyrealsense2 \
     opencv-python-headless \
@@ -202,11 +206,14 @@ RUN apt-get update && apt-get install -y \
     ros-humble-desktop \
     python3-argcomplete \
     ros-humble-rviz2 \
+    ros-humble-pcl-ros \
     python3-colcon-common-extensions \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ros_packages/. /home/ros2_ws/src
 
+# Construire les packages un par un pour résoudre les dépendances
+RUN /bin/bash -c "source /opt/ros/humble/setup.bash && cd /home/ros2_ws && colcon build --packages-select capacinet_msg"
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && cd /home/ros2_ws && colcon build"
 RUN echo "source /home/ros2_ws/install/setup.bash" >> ~/.bashrc
 
