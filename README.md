@@ -63,5 +63,5 @@ Lors de l'utilisation de ce projet Docker, il est possible que vous rencontriez 
 Pour redémarrer le serveur graphique GDM, exécutez la commande suivante :
 
 ```bash
-sudo systemctl restart gdm
+sudo systemctl stop gdm
 ```
