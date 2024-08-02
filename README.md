@@ -56,6 +56,12 @@ Pour utiliser curobo et générer une trajectoire intégrant la caméra, veuille
 ros2 run trajectory_publisher trajectory_pub_node
 ```
 
-## Recommandation de Driver NVIDIA
+## Problème potentiel avec CUDA
 
-Pour exécuter ce Docker de manière optimale, nous recommandons d'utiliser le driver NVIDIA version 545. 
+Lors de l'utilisation de ce projet Docker, il est possible que vous rencontriez des problèmes avec CUDA, comme le message d'erreur `CUDA device not found`. Si cela se produit, il peut être nécessaire de redémarrer le serveur graphique GDM pour résoudre ce problème.
+
+Pour redémarrer le serveur graphique GDM, exécutez la commande suivante :
+
+```bash
+sudo systemctl stop gdm
+```
