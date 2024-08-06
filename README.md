@@ -13,7 +13,8 @@ bash start_docker.sh x86
 ```
 
 ## Étape 3 : Recompiler le package OpenCV
-Pour recompiler le package OpenCV, exécutez les commandes suivantes :
+Lors de l'utilisation de la camera, il se peut que vous rencontriez l'erreur `AttributeError: module 'cv2.dnn' has no attribute 'DictValue' `
+Pour resoudre cela, il faut recompiler le package OpenCV. Veuillez exécuter les commandes suivantes :
 ```bash
 cd /pkgs/opencv/build
 cmake ..
