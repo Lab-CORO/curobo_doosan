@@ -12,14 +12,14 @@ Pour démarrer le conteneur Docker avec la configuration x86, exécutez la comma
 bash start_docker.sh x86
 ```
 
-## Étape 3 : Recompiler le package OpenCV
+## Recompiler le package OpenCV
 Lors de l'utilisation de la camera, il se peut que vous rencontriez l'erreur `AttributeError: module 'cv2.dnn' has no attribute 'DictValue' `
 Pour resoudre cela, vous pouvez commenter la ligne 171 du fichier suivant :
 ```bash
 code /usr/local/lib/python3.10/dist-packages/cv2/typing/__init__.py
 ```
 
-## Étape 4 : Résolution du problème de symbole
+## Résolution du problème de symbole
 
 Pour résoudre le problème de symbole manquant `ucm_set_global_opts`, veuillez exécuter le script ci-dessous à l'intérieur du conteneur Docker :
 
@@ -28,9 +28,6 @@ sudo apt-get update && sudo apt-get install --reinstall -y \
   libmpich-dev \
   hwloc-nox libmpich12 mpich
 ```
-
-
-
 
 ## Instructions pour lancer les scripts de curobo
 
