@@ -53,7 +53,7 @@ ros2 run trajectory_publisher trajectory_pub_node
 
 ## Problème potentiel avec CUDA
 
-Lors de l'utilisation de ce projet Docker, il est possible que vous rencontriez des problèmes avec CUDA, comme le message d'erreur `CUDA device not found`. Si cela se produit, il peut être nécessaire de redémarrer le serveur graphique GDM pour résoudre ce problème.
+Lors de l'utilisation de ce projet Docker, il est possible que vous rencontriez des problèmes avec CUDA, comme le message d'erreur `CUDA_DEVICE_NOT_FOUND`. Si cela se produit, il peut être nécessaire de redémarrer le serveur graphique GDM pour résoudre ce problème.
 
 Pour redémarrer le serveur graphique GDM, exécutez la commande suivante :
 
@@ -63,4 +63,11 @@ sudo systemctl stop gdm
 puis
 ```bash
 sudo systemctl start gdm
+```
+## Lancement du Doosan M1013 dans Rviz2
+
+Pour utiliser Rviz2 afin de visualiser le robot ou tout autres choses, veuillez executer la commande suivante :
+
+```bash
+ros2 launch trajectory_publisher launch_rviz2.launch.py
 ```
