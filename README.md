@@ -60,3 +60,7 @@ Pour redémarrer le serveur graphique GDM, exécutez la commande suivante :
 ```bash
 sudo systemctl stop gdm
 ```
+puis
+```bash
+sudo systemctl start gdm
+```
