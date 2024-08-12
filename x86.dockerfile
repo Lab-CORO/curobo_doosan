@@ -3,6 +3,7 @@ FROM nvcr.io/nvidia/pytorch:23.08-py3 AS torch_cuda_base
 LABEL maintainer "Lucas Carpentier, Guillaume Dupoiron"
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+ARG ROS_DISTRO=humble
 
 # add GL:
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -134,7 +135,8 @@ RUN git clone https://github.com/opencv/opencv.git /pkgs/opencv
 
 WORKDIR /home/ros2_ws/src
 
-RUN git clone https://github.com/Lab-CORO/CapacitiNet_msg.git src/CapacitiNet_msg && git clone https://github.com/Lab-CORO/curobo_ros.git
+RUN git clone https://github.com/Lab-CORO/CapacitiNet_msg.git src/CapacitiNet_msg && git clone https://github.com/Lab-CORO/curobo_ros.git && \
+    git clone https://github.com/IntelRealSense/realsense-ros.git -b ros2-master
 
 WORKDIR /pkgs/opencv
 RUN mkdir -p build
@@ -166,7 +168,8 @@ RUN echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsens
 RUN apt-get update && apt-get install -y librealsense2-dkms \
     librealsense2-utils\
     librealsense2-dev\
-    librealsense2-dbg
+    librealsense2-dbg 
+
 
 
 ##### Installing ROS Humble ######
@@ -186,12 +189,15 @@ RUN apt-get update && apt-get install -y \
 # Installer des dépendances générales
 RUN apt-get update && apt-get install -y \
     lsb-release \
+    python3-rosdep \
     gnupg2 \
     curl \
     python3-pip \
     ros-humble-joint-state-publisher \
     ros-humble-joint-state-publisher-gui \
     ros-humble-moveit \
+    ros-humble-librealsense2* \
+    ros-humble-realsense2-* \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
@@ -217,9 +223,12 @@ RUN /bin/bash -c "source /opt/ros/humble/setup.bash && cd /home/ros2_ws && colco
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && cd /home/ros2_ws && colcon build"
 RUN echo "source /home/ros2_ws/install/setup.bash" >> ~/.bashrc
 
+RUN sudo rosdep init # "sudo rosdep init --include-eol-distros" && \
+         rosdep update # "sudo rosdep update --include-eol-distros" && \
+         rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys=librealsense2 -y
 
-RUN sudo apt-get update && sudo apt-get install --reinstall -y \
-    libmpich-dev \
-    hwloc-nox libmpich12 mpich
+RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
+    cd /home/ros2_ws && \
+    . install/local_setup.bash
 
 WORKDIR /home/ros2_ws
