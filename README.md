@@ -70,7 +70,7 @@ ros2 run tf2_ros static_transform_publisher x y z tx ty tz departure_link arriva
 ```
 Remplacer ces champs par ce qui vous convient.
 
-# Potentiels problemes rencontres 
+# Potentiels problèmes rencontrés 
 
 ## Problème potentiel avec CUDA
 
@@ -86,7 +86,7 @@ puis
 sudo systemctl start gdm
 ```
 
-## Probleme avec le package OpenCV
+## Problème avec le package OpenCV
 Lors de l'utilisation de la camera, il se peut que vous rencontriez l'erreur `AttributeError: module 'cv2.dnn' has no attribute 'DictValue' `
 Pour resoudre cela, vous pouvez commenter la ligne 171 du fichier suivant :
 ```bash
