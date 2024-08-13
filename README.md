@@ -12,12 +12,8 @@ Pour démarrer le conteneur Docker avec la configuration x86, exécutez la comma
 bash start_docker.sh x86
 ```
 
-## Recompiler le package OpenCV
-Lors de l'utilisation de la camera, il se peut que vous rencontriez l'erreur `AttributeError: module 'cv2.dnn' has no attribute 'DictValue' `
-Pour resoudre cela, vous pouvez commenter la ligne 171 du fichier suivant :
-```bash
-code /usr/local/lib/python3.10/dist-packages/cv2/typing/__init__.py
-```
+
+# Utilisation des fonctionalites du Docker
 
 ## Résolution du problème de symbole
 
@@ -51,6 +47,23 @@ Pour utiliser curobo et générer une trajectoire intégrant la caméra, veuille
 ros2 run trajectory_publisher trajectory_pub_node
 ```
 
+## Lancement du Doosan M1013 dans Rviz2
+
+Pour utiliser Rviz2 afin de visualiser le robot ou tout autres choses, veuillez executer la commande suivante :
+
+```bash
+ros2 launch trajectory_publisher launch_rviz2.launch.py
+```
+
+## Lancement du package de la camera Intel Realsense D405
+Pour utiliser la camera afin de generer une trajectoire, veuillez executer la commande suivante :
+
+```bash
+ros2 launch realsense2_camera rs_launch.py
+```
+
+# Potentiels problemes rencontres 
+
 ## Problème potentiel avec CUDA
 
 Lors de l'utilisation de ce projet Docker, il est possible que vous rencontriez des problèmes avec CUDA, comme le message d'erreur `CUDA_DEVICE_NOT_FOUND`. Si cela se produit, il peut être nécessaire de redémarrer le serveur graphique GDM pour résoudre ce problème.
@@ -64,10 +77,10 @@ puis
 ```bash
 sudo systemctl start gdm
 ```
-## Lancement du Doosan M1013 dans Rviz2
 
-Pour utiliser Rviz2 afin de visualiser le robot ou tout autres choses, veuillez executer la commande suivante :
-
+## Probleme avec le package OpenCV
+Lors de l'utilisation de la camera, il se peut que vous rencontriez l'erreur `AttributeError: module 'cv2.dnn' has no attribute 'DictValue' `
+Pour resoudre cela, vous pouvez commenter la ligne 171 du fichier suivant :
 ```bash
-ros2 launch trajectory_publisher launch_rviz2.launch.py
+code /usr/local/lib/python3.10/dist-packages/cv2/typing/__init__.py
 ```
