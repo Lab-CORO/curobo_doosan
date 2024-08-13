@@ -61,6 +61,11 @@ Pour utiliser la camera afin de generer une trajectoire, veuillez executer la co
 ```bash
 ros2 launch realsense2_camera rs_launch.py
 ```
+Pour ajouter le TF de la camera aafin de visualiser le DepthCloud et le Robot en simultane, vous pouvez exectuer cette commade : 
+```bash
+ros2 run tf2_ros static_transform_publisher x y z tx ty tz departure_link arrival_link
+```
+Remplacer ces champs par ce qui vous convient.
 
 # Potentiels problemes rencontres 
 
