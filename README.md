@@ -49,19 +49,22 @@ ros2 run trajectory_publisher trajectory_pub_node
 
 ## Lancement du Doosan M1013 dans Rviz2
 
-Pour utiliser Rviz2 afin de visualiser le robot ou tout autres choses, veuillez executer la commande suivante :
+Pour utiliser Rviz2 afin de visualiser le robot ou toute autre chose, veuillez exécuter la commande suivante :
 
 ```bash
 ros2 launch trajectory_publisher launch_rviz2.launch.py
 ```
+Ce fichier de lancement est configurable a votre souhait.
 
 ## Lancement du package de la camera Intel Realsense D405
-Pour utiliser la camera afin de generer une trajectoire, veuillez executer la commande suivante :
+Pour utiliser la caméra afin de générer une trajectoire, veuillez exécuter la commande suivante :
 
 ```bash
 ros2 launch realsense2_camera rs_launch.py
 ```
-Pour ajouter le TF de la camera aafin de visualiser le DepthCloud et le Robot en simultane, vous pouvez exectuer cette commade : 
+De nombreux arguments peuvent être utilisés (comme le clip_distance), vous pouvez vous référer à ce [repo](https://github.com/IntelRealSense/realsense-ros) GitHub.
+
+Pour ajouter le TF de la caméra afin de visualiser le DepthCloud et le robot en simultané, vous pouvez exécuter cette commande :
 ```bash
 ros2 run tf2_ros static_transform_publisher x y z tx ty tz departure_link arrival_link
 ```
