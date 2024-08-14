@@ -90,10 +90,7 @@ RUN pip install "robometrics[evaluator] @ git+https://github.com/fishbotics/robo
 # github
 
 # COPY pkgs /pkgs
-
-RUN mkdir /pkgs && cd /pkgs && git clone https://github.com/NVlabs/curobo.git
-
-
+RUN mkdir /pkgs && cd /pkgs && git clone  https://github.com/NVlabs/curobo.git
 
 RUN cd /pkgs/curobo && pip3 install .[dev,usd] --no-build-isolation
 
