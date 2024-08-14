@@ -15,16 +15,6 @@ bash start_docker.sh x86
 
 # Utilisation des fonctionalites du Docker
 
-## Résolution du problème de symbole
-
-Pour résoudre le problème de symbole manquant `ucm_set_global_opts`, veuillez exécuter le script ci-dessous à l'intérieur du conteneur Docker :
-
-```bash
-sudo apt-get update && sudo apt-get install --reinstall -y \
-  libmpich-dev \
-  hwloc-nox libmpich12 mpich
-```
-
 ## Instructions pour lancer les scripts de curobo
 
 Pour exécuter les scripts de curobo, utilisez la commande suivante :
@@ -91,4 +81,13 @@ Lors de l'utilisation de la camera, il se peut que vous rencontriez l'erreur `At
 Pour resoudre cela, vous pouvez commenter la ligne 171 du fichier suivant :
 ```bash
 code /usr/local/lib/python3.10/dist-packages/cv2/typing/__init__.py
+```
+## Résolution du problème de symbole
+
+Pour résoudre le problème de symbole manquant `ucm_set_global_opts`, veuillez exécuter le script ci-dessous à l'intérieur du conteneur Docker :
+
+```bash
+sudo apt-get update && sudo apt-get install --reinstall -y \
+  libmpich-dev \
+  hwloc-nox libmpich12 mpich
 ```
