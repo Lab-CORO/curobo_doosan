@@ -53,19 +53,18 @@ Pour utiliser la caméra afin de générer une trajectoire, veuillez exécuter l
 ros2 launch realsense2_camera rs_launch.py
 ```
 De nombreux arguments peuvent être utilisés (comme le clip_distance), vous pouvez vous référer à ce [repo](https://github.com/IntelRealSense/realsense-ros) GitHub.
-# Ajout du TF de la camera
+## Ajout du TF de la camera
 Pour ajouter le TF de la caméra afin de visualiser le DepthCloud et le robot en simultané, vous pouvez exécuter cette commande :
 ```bash
 ros2 run tf2_ros static_transform_publisher x y z tx ty tz departure_link arrival_link
 ```
 Remplacer ces champs par ce qui vous convient.
 
-# Ajout de l'interactive marker dans Rviz
+## Ajout de l'interactive marker dans Rviz
 Pour ajouter un interactive marker dans Rviz, vous pouvez exécuter cette commande :
 ```bash
-./src/curobo_ros/curobo_ros/simple_marker.py
+./src/curobo_ros/curobo_ros/simple_arrow.py
 ```
-Remplacer ces champs par ce qui vous convient.
 
 # Potentiels problèmes rencontrés 
 
