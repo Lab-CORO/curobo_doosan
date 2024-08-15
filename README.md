@@ -58,6 +58,10 @@ Pour ajouter le TF de la caméra afin de visualiser le DepthCloud et le robot en
 ```bash
 ros2 run tf2_ros static_transform_publisher x y z tx ty tz departure_link arrival_link
 ```
+```bash
+ros2 run tf2_ros static_transform_publisher 0.5 1.0 0.5 2.8250572 -0.9121486 2.9853193 base_0 camera_link
+```
+
 Remplacer ces champs par ce qui vous convient.
 
 ## Ajout de l'interactive marker dans Rviz
