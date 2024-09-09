@@ -1,14 +1,14 @@
 robot_cfg:
     kinematics:
         use_usd_kinematics: False
-        usd_path: /pkgs/curobo_doosan/src/m1013/m1013.usd
-        usd_robot_root: "/pkgs/curobo_doosan/src/m1013"
+        usd_path: /home/ros2_ws/src/curobo_ros/curobo_doosan/src/m1013/m1013.usd
+        usd_robot_root: "/home/ros2_ws/src/curobo_ros/curobo_doosan/src/m1013"
         isaac_usd_path: ""
         usd_flip_joints: {}
         usd_flip_joint_limits: []
 
-        urdf_path: "/pkgs/curobo_doosan/src/m1013/m1013.urdf"
-        asset_root_path: "/pkgs/curobo_doosan/src/m1013"
+        urdf_path: "/home/ros2_ws/src/curobo_ros/curobo_doosan/src/m1013/m1013.urdf"
+        asset_root_path: "/home/ros2_ws/src/curobo_ros/curobo_doosan/src/m1013"
     
         base_link: "base_0"
         ee_link: "link6"
