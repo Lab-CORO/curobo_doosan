@@ -17,14 +17,12 @@ robot_cfg:
         extra_links: null
 
 
-        collision_link_names: ['link2', 'link3', 'link4', 'link5']
+        collision_link_names: ['link1', 'link2', 'link3', 'link4', 'link5', 'link6']
         collision_spheres:
-            link1:
+            link1: # Link2 is according to z
                 - "center": [-0.022, -0.01, -0.02]
                   "radius": 0.164
-            link2:
-                - "center": [0.587, -0.007, 0.158]
-                  "radius": 0.127
+            link2: # Link2 is according to x
                 - "center": [0.027, 0.001, 0.167]
                   "radius": 0.127
                 - "center": [0.198, 0.004, 0.169]
@@ -33,22 +31,24 @@ robot_cfg:
                   "radius": 0.077
                 - "center": [0.428, -0.003, 0.154]
                   "radius": 0.077
-            link3:
+                - "center": [0.587, -0.007, 0.158] 
+                  "radius": 0.127
+            link3: # Link3 is according to -y
                 - "center": [0.004, -0.006, 0.004]
                   "radius": 0.101
-            link4:
-                - "center": [0.00397, 0.14701, 0.00397]
-                  "radius": 0.101
+            link4: # Link4 is according to z (but the reference frame is on the top)
                 - "center": [0.0163, 0.01129, -0.41022]
                   "radius": 0.080
                 - "center": [0.01627, 0.04543, -0.29214]
                   "radius": 0.080
                 - "center": [0.01623, 0.12832, -0.17449]
                   "radius": 0.080
-            link5:
+                - "center": [0.00397, 0.14701, 0.00397]
+                  "radius": 0.101
+            link5: # Link5 is according to -y
                 - "center": [0.00397, -0.00007, 0.00397]
                   "radius": 0.101
-            link6:
+            link6: # Link6 is according to z
                 - "center": [0.00466, 0.00667, -0.04205]
                   "radius": 0.065
                   
