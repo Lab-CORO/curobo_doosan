@@ -37,8 +37,8 @@ robot_cfg:
                 - "center": [0.004, -0.006, 0.004]
                   "radius": 0.101
             link4: # Link4 is according to z (but the reference frame is on the top)
-                - "center": [0.0163, 0.01129, -0.41022]
-                  "radius": 0.080
+                - "center": [0.0, -0.01, -0.405]
+                  "radius": 0.068
                 - "center": [0.01627, 0.04543, -0.29214]
                   "radius": 0.080
                 - "center": [0.01623, 0.12832, -0.17449]
