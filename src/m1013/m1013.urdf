@@ -72,7 +72,7 @@
     <child link="link2"/>
     <origin rpy="0 -1.571 -1.571" xyz="0 0.0345 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="346" lower="-2.0944" upper="2.0944" velocity="2.0944"/>
+    <limit effort="346" lower="-6.2832" upper="6.2832" velocity="2.0944"/>
     <dynamics friction="0"/>
   </joint>
   <link name="link2">
