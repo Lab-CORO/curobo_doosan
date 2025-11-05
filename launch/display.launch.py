@@ -14,7 +14,7 @@ def generate_launch_description():
     pkg_dir = get_package_share_directory('curobo_doosan')
 
     # Path to URDF file
-    urdf_file = os.path.join(pkg_dir, 'src', 'm1013', 'm1013.urdf')
+    urdf_file = os.path.join(pkg_dir, 'urdf', 'm1013.urdf')
 
     # Declare launch arguments
     use_gui = DeclareLaunchArgument(

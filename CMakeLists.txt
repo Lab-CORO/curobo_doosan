@@ -11,7 +11,9 @@ find_package(ament_cmake REQUIRED)
 # Install directories
 install(DIRECTORY
   launch
-  src/m1013
+  meshes
+  urdf
+  config
   DESTINATION share/${PROJECT_NAME}/
 )
 

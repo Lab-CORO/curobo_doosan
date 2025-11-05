@@ -56,14 +56,16 @@ curobo_doosan/
 ├── launch/
 │   ├── display.launch.py
 │   └── robot.rviz
-└── src/
-    └── m1013/
-        ├── m1013.urdf
-        ├── m1013.yml
-        └── meshes/
-            ├── m1013_collision/
-            ├── m1013_white/
-            └── m1013_blue/
+├── urdf/
+│   └── m1013.urdf
+├── config/
+│   ├── m1013.yml
+│   ├── m1013.usd
+│   └── m1013_alt.usd
+└── meshes/
+    ├── m1013_collision/
+    ├── m1013_white/
+    └── m1013_blue/
 ```
 
 ## Topics ROS2
