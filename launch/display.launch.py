@@ -3,9 +3,9 @@
 import os
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration, Command
+from launch.conditions import IfCondition, UnlessCondition
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-from launch_ros.parameter_descriptions import ParameterValue
 from ament_index_python.packages import get_package_share_directory
 
 
@@ -50,7 +50,7 @@ def generate_launch_description():
         package='joint_state_publisher',
         executable='joint_state_publisher',
         name='joint_state_publisher',
-        condition=lambda context: 'false' if LaunchConfiguration('gui').perform(context) == 'true' else 'true'
+        condition=UnlessCondition(LaunchConfiguration('gui'))
     )
 
     # Joint State Publisher GUI node
@@ -58,7 +58,7 @@ def generate_launch_description():
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
         name='joint_state_publisher_gui',
-        condition=lambda context: 'true' if LaunchConfiguration('gui').perform(context) == 'true' else 'false'
+        condition=IfCondition(LaunchConfiguration('gui'))
     )
 
     # RViz node
@@ -68,7 +68,7 @@ def generate_launch_description():
         name='rviz2',
         output='screen',
         arguments=['-d', os.path.join(pkg_dir, 'launch', 'robot.rviz')],
-        condition=lambda context: 'true' if LaunchConfiguration('rviz').perform(context) == 'true' else 'false'
+        condition=IfCondition(LaunchConfiguration('rviz'))
     )
 
     return LaunchDescription([
