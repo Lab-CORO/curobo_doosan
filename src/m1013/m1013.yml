@@ -8,10 +8,16 @@ robot_cfg:
         base_link: "dsr01/world"
         tool_frames: ["dsr01/link6"]
         lock_joints: null
-        extra_links: null
+        extra_links:
+            attached_object:
+                fixed_transform: [0, 0, 0, 1, 0, 0, 0]
+                joint_name: attach_joint
+                joint_type: FIXED
+                link_name: attached_object
+                parent_link_name: dsr01/link6
 
 
-        collision_link_names: ['dsr01/link1', 'dsr01/link2', 'dsr01/link3', 'dsr01/link4', 'dsr01/link5', 'dsr01/link6']
+        collision_link_names: ['dsr01/link1', 'dsr01/link2', 'dsr01/link3', 'dsr01/link4', 'dsr01/link5', 'dsr01/link6', 'attached_object']
         collision_spheres:
             dsr01/link1: # Link2 is according to z
                 - "center": [-0.022, -0.01, -0.02]
@@ -47,14 +53,29 @@ robot_cfg:
                   "radius": 0.065
                   
         collision_sphere_buffer: 0.01
-        extra_collision_spheres: {}
+        # Sphere budget for a grasped payload (cuRobo's own default, as in
+        # franka.yml). cuRobo sizes a fit at roughly 1 sphere per 15 cm3 of
+        # bounding box, so this number sets the largest object that gets a
+        # faithful collision model:
+        #   4 -> ~4 cm cube   16 -> ~6 cm cube   34 -> ~8 cm   40 -> ~8.5 cm
+        # Above the budget AttachmentServices caps the fit and logs a warning
+        # naming the shortfall; it never fails silently. Raise this if you
+        # transport larger payloads -- but the slots stay in the robot's sphere
+        # tensor and are evaluated on every collision query even when nothing
+        # is attached. Measured MotionPlanner warmup on Jetson Orin:
+        #   4 slots -> 25-47 s     16 slots -> 40 s     40 slots -> 53-63 s
+        # (the spread at constant budget is machine-load drift, so treat these
+        # as a trend, not exact figures.) Kept at 4 so the cost of the attach
+        # feature is not charged to setups that never use it.
+        extra_collision_spheres: {attached_object: 4}
         self_collision_ignore : {
           "dsr01/world": ["dsr01/link1"],
           "dsr01/link1": ["dsr01/link2", "dsr01/link3"],
           "dsr01/link2": ["dsr01/link3", "dsr01/link5"],
           "dsr01/link3": ["dsr01/link4", "dsr01/link5", "dsr01/link6"],
           "dsr01/link4": ["dsr01/link5", "dsr01/link6"],
-          "dsr01/link5": ["dsr01/link6"],
+          "dsr01/link5": ["dsr01/link6", "attached_object"],
+          "dsr01/link6": ["attached_object"],
         }
         self_collision_buffer: {
           'dsr01/link1': 0,
@@ -63,6 +84,7 @@ robot_cfg:
           'dsr01/link4': 0,
           'dsr01/link5' : 0,
           'dsr01/link6' : 0,
+          'attached_object': 0,
         }
         
         use_global_cumul : True
