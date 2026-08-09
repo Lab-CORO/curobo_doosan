@@ -72,7 +72,7 @@
     <child link="dsr01/link2"/>
     <origin rpy="0 -1.571 -1.571" xyz="0 0.0345 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="346" lower="-6.2832" upper="6.2832" velocity="2.0944"/>
+    <limit effort="346" lower="-2.0944" upper="2.0944" velocity="2.0944"/>
     <dynamics friction="0"/>
   </joint>
   <link name="dsr01/link2">
@@ -124,7 +124,7 @@
     <child link="dsr01/link3"/>
     <origin rpy="0 0 1.571" xyz="0.62 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="163" lower="-2.35619" upper="2.35619" velocity="3.1416"/>
+    <limit effort="163" lower="-2.61799" upper="2.61799" velocity="3.1416"/>
     <dynamics friction="0"/>
   </joint>
   <link name="dsr01/link3">
